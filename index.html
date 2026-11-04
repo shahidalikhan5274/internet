@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>NetHisab - ISP Billing & Partnership Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- PWA & Mobile App Capabilities -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b0f19">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="NetHisab Pro">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="touch-icon" href="apple-touch-icon.png">
+</head>
+<body class="notranslate">
+  <!-- App Container -->
+  <div class="app-layout">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h2>NetHisab <span>Pro</span></h2>
+          <p>ISP Partnership Manager</p>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <button class="nav-item active" data-tab="dashboard">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          <span>Dashboard (خلاصہ)</span>
+        </button>
+
+        <button class="nav-item" data-tab="customers">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          <span>Users & Bills (صارفین)</span>
+          <span class="badge" id="totalUsersBadge">0</span>
+        </button>
+
+        <button class="nav-item" data-tab="partnership">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+          <span>Partnership Split (شراکت داری)</span>
+        </button>
+
+        <button class="nav-item" data-tab="defaulters">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          <span>Baqaya / Defaulters (بقایا جات)</span>
+          <span class="badge badge-danger" id="defaulterCountBadge">0</span>
+        </button>
+
+        <button class="nav-item" data-tab="expenses">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          <span>Expenses (اخراجات)</span>
+        </button>
+
+        <button class="nav-item" data-tab="settings">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          <span>Partners & Settings</span>
+        </button>
+      </nav>
+
+      <div style="padding: 10px 16px;">
+        <button class="btn btn-primary" style="width: 100%; justify-content: center; font-weight: 700; padding: 10px 12px; box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35); display: flex; align-items: center; gap: 8px;" onclick="app.openUserModal()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <span>+ Naya User Add Karein</span>
+        </button>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="partner-chips">
+          <div class="chip chip-partner1">
+            <span class="dot"></span>
+            <span id="partner1NameLabel">Shahid</span>
+          </div>
+          <div class="chip chip-partner2">
+            <span class="dot"></span>
+            <span id="partner2NameLabel">Adnan</span>
+          </div>
+        </div>
+        <p class="data-status" id="sidebarSyncWrapper">
+          <span class="status-indicator" id="sidebarSyncDot"></span> 
+          <span id="sidebarSyncLabel">Local Mode</span>
+        </p>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-wrapper">
+      <!-- Top Bar -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="mobile-toggle" id="sidebarToggle" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div>
+            <h1 class="page-title" id="pageTitle">Dashboard</h1>
+            <p class="page-subtitle">Monthly Internet Billing & Collection Summary</p>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <!-- Live Cloud Sync Status Pill -->
+          <button class="cloud-sync-pill" id="btnCloudStatusPill" title="Online Cloud Sync Status (Click karein Setup ke liye)">
+            <span class="cloud-pulse-dot" id="cloudStatusDot"></span>
+            <span class="cloud-pill-label" id="cloudStatusText">Offline (Local)</span>
+          </button>
+
+          <!-- Month Selector with Dropdown & Previous/Next buttons -->
+          <div class="month-navigation-bar">
+            <button class="btn btn-icon-only btn-nav-month" id="btnPrevMonth" title="Pichla Mahina">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+
+            <div class="month-select-pair">
+              <select id="selectMonthName" class="form-select select-month-dropdown">
+                <option value="01">January (جنوری)</option>
+                <option value="02">February (فروری)</option>
+                <option value="03">March (مارچ)</option>
+                <option value="04">April (اپریل)</option>
+                <option value="05">May (مئی)</option>
+                <option value="06">June (جون)</option>
+                <option value="07">July (جولائی)</option>
+                <option value="08">August (اگست)</option>
+                <option value="09">September (ستمبر)</option>
+                <option value="10">October (اکتوبر)</option>
+                <option value="11">November (نومبر)</option>
+                <option value="12">December (دسمبر)</option>
+              </select>
+
+              <select id="selectYear" class="form-select select-year-dropdown">
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026" selected>2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                <option value="2034">2034</option>
+                <option value="2035">2035</option>
+                <option value="2036">2036</option>
+                <option value="2037">2037</option>
+                <option value="2038">2038</option>
+                <option value="2039">2039</option>
+                <option value="2040">2040</option>
+              </select>
+            </div>
+
+            <button class="btn btn-icon-only btn-nav-month" id="btnNextMonth" title="Agla Mahina">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+
+          <button class="btn btn-warning" id="btnQuickAddExtraIncome" title="Charger ya Complain Ki Fees Add Karein">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <span>+ Charger / Complain Fees</span>
+          </button>
+
+          <button class="btn btn-primary" id="btnQuickAddUser">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            <span>Naya User Add Karein</span>
+          </button>
+
+          <button class="btn btn-secondary btn-icon-only" id="btnBackupData" title="Data Backup / Export">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Content Views -->
+      <div class="content-scrollable">
+
+        <!-- ==============================================
+             VIEW 1: DASHBOARD
+             ============================================== -->
+        <section id="view-dashboard" class="tab-view active">
+          
+          <!-- Dashboard Quick Actions Bar -->
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:18px; padding:12px 18px; background:rgba(15, 23, 42, 0.75); border:1px solid var(--border-subtle); border-radius:var(--radius-md);">
+            <div>
+              <strong style="font-size:1.05rem; color:var(--text-main); display:flex; align-items:center; gap:6px;">
+                <span>⚡</span>
+                <span>Asan Actions (فوری بٹنز):</span>
+              </strong>
+              <small style="color:var(--text-muted);">Naya connection lagayein ya charger / complain fees darj karein</small>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <button class="btn btn-primary" onclick="app.openUserModal()" style="font-weight:700; padding:10px 18px; box-shadow:0 4px 14px rgba(37,99,235,0.4); display:flex; align-items:center; gap:8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                <span>+ Naya User Add Karein</span>
+              </button>
+              <button class="btn btn-warning" onclick="app.openExtraIncomeModal()" style="font-weight:700; padding:10px 18px; display:flex; align-items:center; gap:8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                <span>+ Charger / Complain Fees</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Summary Cards Grid -->
+          <div class="kpi-grid">
+            <div class="kpi-card highlight-blue">
+              <div class="kpi-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <div class="kpi-info">
+                <span class="kpi-label">Total Expected Billing</span>
+                <h3 class="kpi-value" id="kpiExpectedBill">Rs. 0</h3>
+                <span class="kpi-sub" id="kpiActiveUsersCount">0 Active Users</span>
+              </div>
+            </div>
+
+            <div class="kpi-card highlight-green">
+              <div class="kpi-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="kpi-info">
+                <span class="kpi-label">Total Collected (Wasool Shuda)</span>
+                <h3 class="kpi-value" id="kpiTotalCollected">Rs. 0</h3>
+                <span class="kpi-sub badge-tag success" id="kpiCollectionRate">0% Collected</span>
+              </div>
+            </div>
+
+            <div class="kpi-card highlight-amber">
+              <div class="kpi-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="kpi-info">
+                <span class="kpi-label">Total Pending (Baqaya / Arrears)</span>
+                <h3 class="kpi-value" id="kpiTotalPending">Rs. 0</h3>
+                <span class="kpi-sub badge-tag warning" id="kpiUnpaidUsersCount">0 Users Unpaid</span>
+              </div>
+            </div>
+
+            <div class="kpi-card highlight-purple">
+              <div class="kpi-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <div class="kpi-info">
+                <span class="kpi-label">Net Profit (Kharche nikal kar)</span>
+                <h3 class="kpi-value" id="kpiNetProfit">Rs. 0</h3>
+                <span class="kpi-sub" id="kpiTotalExpenseSub">Expenses: Rs. 0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Partnership Real-Time Live Settlement Alert Card -->
+          <div class="settlement-hero-card">
+            <div class="settlement-header">
+              <div class="settlement-title">
+                <div class="live-pulse"></div>
+                <div>
+                  <h3>Partnership Hisab-Kitab (Live Settlement)</h3>
+                  <p>Dono partners ke paas jama raqam aur aapas ka faisla</p>
+                </div>
+              </div>
+              <button class="btn btn-sm btn-ghost" onclick="app.switchTab('partnership')">Detail Dekhein →</button>
+            </div>
+
+            <div class="settlement-split-grid">
+              <div class="partner-box partner-1-box">
+                <div class="partner-avatar" id="avatarP1">S</div>
+                <div class="partner-meta">
+                  <span class="partner-title" id="dashP1Title">Shahid</span>
+                  <h4 class="partner-amount" id="dashP1Collected">Rs. 0</h4>
+                  <p class="partner-foot" id="dashP1Foot">Total Collections Handled</p>
+                </div>
+              </div>
+
+              <div class="split-divider">
+                <span class="split-vs">VS</span>
+              </div>
+
+              <div class="partner-box partner-2-box">
+                <div class="partner-avatar" id="avatarP2">A</div>
+                <div class="partner-meta">
+                  <span class="partner-title" id="dashP2Title">Adnan</span>
+                  <h4 class="partner-amount" id="dashP2Collected">Rs. 0</h4>
+                  <p class="partner-foot" id="dashP2Foot">Total Collections Handled</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="settlement-action-banner" id="dashSettlementVerdict">
+              <!-- Dynamically populated verdict banner -->
+              <span class="verdict-icon">⚖️</span>
+              <div class="verdict-text">
+                <strong id="dashVerdictMain">Hisab barabar karne ke liye:</strong>
+                <span id="dashVerdictDetail">Paise collect hone par yahan exact faisla aayega.</span>
+              </div>
+              <button class="btn btn-sm btn-success" id="btnDashSettlePay" style="margin-left:auto; display:none;" onclick="app.openSettlementModal()">
+                💸 Hisab Clear Karein
+              </button>
+            </div>
+          </div>
+
+          <!-- Quick Action & Defaulter Highlights -->
+          <div class="dashboard-row">
+            <!-- Defaulters Quick List -->
+            <div class="card flex-1">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-title">⚠️ Ziyada Baqaya Wale Users (Immediate Action)</h3>
+                  <p class="card-subtitle">Jin users ka 1 ya 2+ mahine ka bill pending hai</p>
+                </div>
+                <button class="btn btn-sm btn-outline" onclick="app.switchTab('defaulters')">Tamam Baqaya Dekhein</button>
+              </div>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>User</th>
+                      <th>Area / Phone</th>
+                      <th>Pichla Baqaya</th>
+                      <th>Total Due</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="quickDefaultersList">
+                    <!-- Populated by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Recent Collections -->
+            <div class="card flex-1">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-title">🧾 Haliyah Wasooliyan (Recent Payments)</h3>
+                  <p class="card-subtitle">Abhi haal me kis partner ne kitna bill wasool kia</p>
+                </div>
+                <button class="btn btn-sm btn-outline" onclick="app.switchTab('customers')">Tamam Users</button>
+              </div>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>User</th>
+                      <th>Raqam</th>
+                      <th>Wasool Karinda</th>
+                      <th>Tareekh</th>
+                    </tr>
+                  </thead>
+                  <tbody id="recentPaymentsList">
+                    <!-- Populated by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charger & Complain Extra Income Card -->
+          <div class="card" style="margin-top: 24px;">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">⚡ Charger & Complain Wasooliyan (Extra Income)</h3>
+                <p class="card-subtitle">Is mahine router chargers, complaint visit fees aur deegar extra aamdani ka hisab</p>
+              </div>
+              <div style="display: flex; gap: 12px; align-items: center;">
+                <span class="badge" style="background: rgba(245, 158, 11, 0.2); color: var(--accent-warning); font-weight: 700; font-size: 0.9rem; padding: 6px 12px;" id="dashExtraIncomeTotalBadge">Total: Rs. 0</span>
+                <button class="btn btn-sm btn-warning" onclick="app.openExtraIncomeModal()">
+                  + Nayi Wasooli Add Karein
+                </button>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Qisam (Category)</th>
+                    <th>Tafseel & Customer</th>
+                    <th>Raqam</th>
+                    <th>Wasool Kiye (Receiver)</th>
+                    <th>Tareekh</th>
+                    <th class="text-right">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="dashExtraIncomeTableBody">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==============================================
+             VIEW 2: USERS & BILLING
+             ============================================== -->
+        <section id="view-customers" class="tab-view">
+          <!-- Controls Bar -->
+          <div class="table-toolbar">
+            <div class="search-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" id="userSearchInput" placeholder="User ka Naam, Phone, ID ya Area search karein...">
+            </div>
+
+            <button class="btn btn-primary" onclick="app.openUserModal()" style="font-weight:700; white-space:nowrap; padding:10px 18px; box-shadow:0 4px 14px rgba(37,99,235,0.4); display:flex; align-items:center; gap:8px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>+ Naya User Add Karein</span>
+            </button>
+
+            <div class="filter-group">
+              <select id="filterStatus" class="form-select">
+                <option value="all">Tamam Status</option>
+                <option value="paid">Sirf Paid (Ada Shuda)</option>
+                <option value="unpaid">Sirf Unpaid (Wajib-ul-Ada)</option>
+                <option value="partial">Partial Paid (Aadha Dia)</option>
+                <option value="arrears">Ziyada Baqaya (2+ Months)</option>
+              </select>
+
+              <select id="filterConnection" class="form-select">
+                <option value="all">Tamam (Active + Band)</option>
+                <option value="active">Sirf Active (🟢 Chalu)</option>
+                <option value="disabled">Sirf Disabled (🔴 Band)</option>
+              </select>
+
+              <select id="filterCollector" class="form-select">
+                <option value="all">Har Collector</option>
+                <option value="p1">Wasool By: Shahid</option>
+                <option value="p2">Wasool By: Adnan</option>
+                <option value="unassigned">Pending (Kisi ne wasool nahi kia)</option>
+              </select>
+
+              <select id="filterArea" class="form-select">
+                <option value="all">Tamam Areas</option>
+              </select>
+
+              <button class="btn btn-warning btn-sm" onclick="app.openExtraIncomeModal()" title="Charger ya Complain Ki Fees Add Karein">
+                ⚡ + Charger / Complain Fees
+              </button>
+
+              <button class="btn btn-outline" id="btnExportUsersCsv" title="Excel / CSV me download karein">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Export CSV</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Main Customers Table -->
+          <div class="card table-card-container">
+            <!-- Top Horizontal Scroll & Quick Controller Bar -->
+            <div class="table-scroll-controller">
+              <div class="scroll-ctrl-info">
+                <span class="scroll-hint-icon">↔️</span>
+                <span class="scroll-hint-text"><strong>Left/Right Scroll:</strong> Name freeze rahega — baqi columns dekhne ke liye scroll bar ya buttons use karein</span>
+              </div>
+              <div class="scroll-ctrl-actions">
+                <button type="button" class="btn-scroll-step" id="btnScrollTableLeft" title="Baayein (Left) Scroll Karein">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                  <span>Left</span>
+                </button>
+                <div class="top-scrollbar-track" id="tableTopScrollTrack" title="Drag ya Click kar ke scroll karein">
+                  <div class="top-scrollbar-thumb" id="tableTopScrollThumb"></div>
+                </div>
+                <button type="button" class="btn-scroll-step" id="btnScrollTableRight" title="Daayein (Right) Scroll Karein">
+                  <span>Right</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="table-responsive table-responsive-viewport" id="customersTableContainer">
+              <table class="data-table" id="customersTable">
+                <thead>
+                  <tr>
+                    <th>User ID & Naam</th>
+                    <th>Area & Raabta</th>
+                    <th>Connection Status & Tareekh</th>
+                    <th>Package / Mahana</th>
+                    <th>Pichla Baqaya</th>
+                    <th>Kul Wajib Ada</th>
+                    <th>Current Mahina Status</th>
+                    <th>Wasool Karinda</th>
+                    <th class="text-right">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="customersTableBody">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Table Footer Pagination / Count -->
+            <div class="table-footer">
+              <span id="usersTableCountInfo">Showing 0 of 0 users</span>
+              <div class="quick-legends">
+                <span class="legend-item"><span class="badge badge-paid">Paid</span> Pura Mil Gya</span>
+                <span class="legend-item"><span class="badge badge-partial">Partial</span> Thora Dia</span>
+                <span class="legend-item"><span class="badge badge-unpaid">Unpaid</span> Pending</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==============================================
+             VIEW 3: PARTNERSHIP SETTLEMENT & PROFIT
+             ============================================== -->
+        <section id="view-partnership" class="tab-view">
+          <div class="partnership-container">
+            <div class="card settlement-card-detailed">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-title">🤝 Partner Hisab Kitab & Profit Distribution</h3>
+                  <p class="card-subtitle">Har mahine dono partners ka aapas ka hisab barabar karne ka auto calculator</p>
+                </div>
+                <div class="split-ratio-tag">
+                  Split Ratio: <strong id="displaySplitRatio">50% - 50%</strong>
+                </div>
+              </div>
+
+              <!-- Main Breakdown 3 Columns -->
+              <div class="breakdown-grid">
+                <!-- Column 1: Partner 1 -->
+                <div class="breakdown-col partner-1-col">
+                  <div class="col-head">
+                    <span class="avatar-lg" id="avatarColP1">S</span>
+                    <div>
+                      <h4 id="colP1Name">Shahid</h4>
+                      <p>Partner 1</p>
+                    </div>
+                  </div>
+                  <div class="stat-line">
+                    <span>Bills Wasool Kiye:</span>
+                    <strong id="statP1BillsCount">0 Users</strong>
+                  </div>
+                  <div class="stat-line highlight">
+                    <span>Total Cash Wasool:</span>
+                    <strong class="text-success" id="statP1CashTotal">Rs. 0</strong>
+                  </div>
+                  <div class="stat-line">
+                    <span>Apni Jeb Se Kharche:</span>
+                    <strong class="text-danger" id="statP1ExpensesPaid">Rs. 0</strong>
+                  </div>
+                  <div class="stat-line">
+                    <span id="statP1TransferredLabel">Adnan Ko Ada Kiye:</span>
+                    <strong class="text-warning" id="statP1Transferred">Rs. 0</strong>
+                  </div>
+                  <div class="stat-line net" style="background: rgba(239, 68, 68, 0.08); border-radius: var(--radius-sm); padding: 8px 10px; margin: 4px 0;">
+                    <span>Baqaya Dena (Payable In Hand):</span>
+                    <strong id="statP1PayableDue" class="text-danger" style="font-size: 1.05rem;">Rs. 0</strong>
+                  </div>
+                  <div class="stat-line">
+                    <span>Saaf Cash In Hand (Hisab Ke Baad):</span>
+                    <strong id="statP1NetInHand">Rs. 0</strong>
+                  </div>
+                </div>
+
+                <!-- Column 2: Partner 2 (Adnan) -->
+                <div class="breakdown-col partner-2-col">
+                  <div class="col-head">
+                    <span class="avatar-lg" id="avatarColP2">A</span>
+                    <div>
+                      <h4 id="colP2Name">Adnan</h4>
+                      <p>Partner 2</p>
+                    </div>
+                  </div>
+                  <div class="stat-line">
+                    <span>Bills Wasool Kiye:</span>
+                    <strong id="statP2BillsCount">0 Users</strong>
+                  </div>
+                  <div class="stat-line highlight">
+                    <span>Total Cash Wasool:</span>
+                    <strong class="text-success" id="statP2CashTotal">Rs. 0</strong>
+                  </div>
+                  <div class="stat-line">
+                    <span>Apni Jeb Se Kharche:</span>
+                    <strong class="text-danger" id="statP2ExpensesPaid">Rs. 0</strong>
+                  </div>
+                  <div class="stat-line">
+                    <span id="statP2TransferredLabel">Shahid Se Wasool Kiye:</span>
+                    <strong class="text-success" id="statP2Transferred">Rs. 0</strong>
+                  </div>
+                  <div class="stat-line net" style="background: rgba(16, 185, 129, 0.08); border-radius: var(--radius-sm); padding: 8px 10px; margin: 4px 0;">
+                    <span>Baqaya Lena (Receivable In Hand):</span>
+                    <strong id="statP2ReceivableDue" class="text-blue" style="font-size: 1.05rem;">Rs. 0</strong>
+                  </div>
+                  <div class="stat-line">
+                    <span>Saaf Cash In Hand (Hisab Ke Baad):</span>
+                    <strong id="statP2NetInHand">Rs. 0</strong>
+                  </div>
+                </div>
+
+                <!-- Column 3: Business Summary -->
+                <div class="breakdown-col business-col">
+                  <div class="col-head">
+                    <span class="avatar-lg net-icon">📊</span>
+                    <div>
+                      <h4>Business Net Pool</h4>
+                      <p>Kul Aamdani & Kharche</p>
+                    </div>
+                  </div>
+                  <div class="stat-line">
+                    <span>Kul Wasool Shuda Raqam:</span>
+                    <strong id="statNetTotalCollected">Rs. 0</strong>
+                  </div>
+                  <div class="stat-line">
+                    <span>Kul Mahana Kharche:</span>
+                    <strong class="text-danger" id="statNetTotalExpenses">Rs. 0</strong>
+                  </div>
+                  <div class="stat-line highlight net-profit-line">
+                    <span>Kul Saaf Munafa (Net Profit):</span>
+                    <strong class="text-purple" id="statNetBusinessProfit">Rs. 0</strong>
+                  </div>
+                  <div class="stat-line">
+                    <span>Har Partner Ka Hissa (50%):</span>
+                    <strong class="text-blue" id="statPerPartnerShare">Rs. 0</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Final Settlement Verdict Box -->
+              <div class="final-settlement-box" id="finalSettlementBox">
+                <div class="verdict-banner-large" id="mainVerdictBanner">
+                  <div class="banner-icon-large" id="mainVerdictIcon">💰</div>
+                  <div class="banner-body">
+                    <h3 id="finalSettlementHeadline">Faisla: Hisab Barabar Karne Ka Tareeqa</h3>
+                    <p id="finalSettlementInstructions">Jab dono partners bills collect karenge, to yahan exact amount show hogi ke kis ne kis ko kitna cash dena hai.</p>
+                  </div>
+                  <div class="verdict-actions-container" id="verdictActionsContainer" style="display:flex; align-items:center;">
+                    <button type="button" class="btn btn-success btn-lg" id="btnOpenSettlementModal" onclick="app.openSettlementModal()">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span id="btnOpenSettlementText">💸 Hisab Clear / Pay Karein</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Settlement Transfers History List -->
+                <div class="settlement-transfers-card" id="settlementTransfersCard" style="display:none; margin-top:20px; background:rgba(15,23,42,0.5); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:18px 22px;">
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <div>
+                      <h4 style="font-size:0.95rem; font-weight:700;">🤝 Is Mahine Aapas Me Ada Shuda Raqam (Settlement Transfers):</h4>
+                      <p style="font-size:0.75rem; color:var(--text-muted); margin-top:2px;">Hisab clear karne ke liye di gayi payments ka record</p>
+                    </div>
+                    <span id="settlementTotalPaidTag" class="badge badge-paid">Rs. 0 Paid</span>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="data-table">
+                      <thead>
+                        <tr>
+                          <th>Kis Ne Dia (Payer)</th>
+                          <th>Kis Ko Mila (Receiver)</th>
+                          <th>Raqam</th>
+                          <th>Payment Method</th>
+                          <th>Tareekh</th>
+                          <th>Notes</th>
+                          <th class="text-right">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody id="settlementTransfersTableBody">
+                        <!-- Populated by JS -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==============================================
+             VIEW 4: BAQAYA / DEFAULTERS
+             ============================================== -->
+        <section id="view-defaulters" class="tab-view">
+          <div class="card table-card-container">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">⚠️ Defaulters & Overdue Customers (Baqaya List)</h3>
+                <p class="card-subtitle">Wo users jinhon ne 1 ya 2 se zayed mahino se bill ada nahi kia</p>
+              </div>
+              <div class="defaulter-totals">
+                <span>Kul Phansa Hua Paisa:</span>
+                <strong class="text-danger" id="totalOverdueAmount">Rs. 0</strong>
+              </div>
+            </div>
+
+            <!-- Top Horizontal Scroll Controller -->
+            <div class="table-scroll-controller">
+              <div class="scroll-ctrl-info">
+                <span class="scroll-hint-icon">↔️</span>
+                <span class="scroll-hint-text"><strong>Left/Right Scroll:</strong> Baqaya list me baayein/daayein scroll karein</span>
+              </div>
+              <div class="scroll-ctrl-actions">
+                <button type="button" class="btn-scroll-step" id="btnScrollDefaultersLeft" title="Baayein Scroll Karein">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                  <span>Left</span>
+                </button>
+                <div class="top-scrollbar-track" id="defaultersTopScrollTrack" title="Drag ya Click kar ke scroll karein">
+                  <div class="top-scrollbar-thumb" id="defaultersTopScrollThumb"></div>
+                </div>
+                <button type="button" class="btn-scroll-step" id="btnScrollDefaultersRight" title="Daayein Scroll Karein">
+                  <span>Right</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="table-responsive table-responsive-viewport" id="defaultersTableContainer">
+              <table class="data-table" id="defaultersTable">
+                <thead>
+                  <tr>
+                    <th>User ID & Naam</th>
+                    <th>Phone / WhatsApp</th>
+                    <th>Area</th>
+                    <th>Package</th>
+                    <th>Pichla Baqaya</th>
+                    <th>Current Bill</th>
+                    <th>Kul Wajib Ada</th>
+                    <th>Unpaid Months</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="defaultersTableBody">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==============================================
+             VIEW 5: EXPENSES
+             ============================================== -->
+        <section id="view-expenses" class="tab-view">
+          <div class="expenses-layout">
+            <!-- Add Expense Form -->
+            <div class="card expense-form-card">
+              <div class="card-header">
+                <h3 class="card-title">Naya Kharcha Add Karein</h3>
+                <p class="card-subtitle">Main line, bijli, wire, helper salary waghaira</p>
+              </div>
+              <form id="addExpenseForm" class="styled-form">
+                <div class="form-group">
+                  <label for="expenseTitle">Kharcha Kis Cheez Ka Hai? *</label>
+                  <input type="text" id="expenseTitle" placeholder="e.g. PTCL / Nayatel Main Bandwidth Bill" required class="form-input">
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="expenseCategory">Category</label>
+                    <select id="expenseCategory" class="form-select">
+                      <option value="Bandwidth Line">Main Internet Bandwidth</option>
+                      <option value="Electricity">Bijli / UPS / Battery</option>
+                      <option value="Maintenance">Wire / Fiber / Joint Box</option>
+                      <option value="Staff">Lineman / Helper Salary</option>
+                      <option value="Equipment">Router / Switch / Media Converter</option>
+                      <option value="Other">Deegar (Misc)</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="expenseAmount">Raqam (Rs.) *</label>
+                    <input type="number" id="expenseAmount" placeholder="e.g. 35000" min="1" required class="form-input">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="expensePayer">Kharche Ke Paise Kis Ne Diye? *</label>
+                    <select id="expensePayer" class="form-select">
+                      <option value="p1">Shahid (Apni Jeb Se)</option>
+                      <option value="p2">Adnan (Apni Jeb Se)</option>
+                      <option value="shared">Dono ne mil kar / Common Cash</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="expenseDate">Tareekh</label>
+                    <input type="date" id="expenseDate" class="form-input">
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Kharcha Save Karein</span>
+                </button>
+              </form>
+            </div>
+
+            <!-- Expense List Table -->
+            <div class="card expense-list-card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-title">Is Mahine Ke Kul Kharche</h3>
+                  <p class="card-subtitle" id="expenseMonthSubtitle">Current Month Expenses</p>
+                </div>
+                <div class="expense-total-badge">
+                  Total: <strong id="expenseTotalSumDisplay">Rs. 0</strong>
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Tafseel (Description)</th>
+                      <th>Category</th>
+                      <th>Raqam</th>
+                      <th>Kis Ne Ada Kia</th>
+                      <th>Tareekh</th>
+                      <th class="text-right">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="expenseTableBody">
+                    <!-- Populated by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==============================================
+             VIEW 6: SETTINGS & BACKUP
+             ============================================== -->
+        <section id="view-settings" class="tab-view">
+          <div class="settings-grid">
+
+            <!-- ☁️ Online Cloud Sync & Mobile Database Card -->
+            <div class="card card-cloud-sync-container" style="grid-column: 1 / -1; border: 1px solid rgba(59, 130, 246, 0.35); background: linear-gradient(180deg, rgba(30, 58, 138, 0.12), rgba(15, 23, 42, 0.85));">
+              <div class="card-header" style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px;">
+                <div>
+                  <div style="display:flex; align-items:center; gap:10px;">
+                    <span style="font-size:1.6rem;">☁️</span>
+                    <h3 class="card-title" style="font-size:1.25rem;">Real-Time Mobile Cloud Sync (آن لائن موبائل سنک)</h3>
+                  </div>
+                  <p class="card-subtitle" style="margin-top:4px;">
+                    Shahid aur Adnan dono apne mobile se 24 ghante use karein — Laptop on rakhne ki bilkul zaroorat nahi!
+                  </p>
+                </div>
+                <div class="cloud-status-badge" id="cloudStatusBadgeDisplay">
+                  <span class="cloud-pulse-dot" id="cloudBadgeDot"></span>
+                  <span id="cloudBadgeText" style="font-weight:700;">Local Storage Mode (Offline)</span>
+                </div>
+              </div>
+
+              <!-- Status Information Banner -->
+              <div class="cloud-sync-info-banner" id="cloudSyncInfoBanner" style="margin-bottom:20px; padding:14px 18px; border-radius:var(--radius-md); background:rgba(15, 23, 42, 0.6); border:1px solid var(--border-subtle); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+                <div style="display:flex; align-items:center; gap:12px;">
+                  <div style="font-size:1.4rem;" id="cloudBannerIcon">📱</div>
+                  <div>
+                    <div style="font-weight:700; font-size:0.95rem;" id="cloudBannerTitle">Dono Partners Ke Mobile Par Live Update</div>
+                    <div style="font-size:0.82rem; color:var(--text-muted);" id="cloudBannerDesc">Adnan ya Shahid me se koi bhi collection, bill ya charger fee add karega to 1 second me dono ke paas update show hogi.</div>
+                  </div>
+                </div>
+                <div style="font-size:0.8rem; color:var(--text-dim);" id="cloudLastSyncTime">Last Synced: Never</div>
+              </div>
+
+              <!-- Firebase Config Form -->
+              <form id="formCloudSyncConfig" class="styled-form">
+                <div class="form-row">
+                  <div class="form-group" style="flex:2;">
+                    <label for="cfgFirebaseDbUrl">Firebase Realtime Database URL * <small style="color:var(--accent-cyan);">(Google Firebase se copy karein)</small></label>
+                    <input type="url" id="cfgFirebaseDbUrl" class="form-input" value="https://net-hisab-7fe4a-default-rtdb.firebaseio.com" style="font-family:monospace; font-size:0.88rem;">
+                  </div>
+                  <div class="form-group" style="flex:1;">
+                    <label for="cfgFirebaseProjectId">Project ID (Optional)</label>
+                    <input type="text" id="cfgFirebaseProjectId" class="form-input" value="net-hisab-7fe4a" style="font-family:monospace; font-size:0.88rem;">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="cfgFirebaseApiKey">Firebase API Key (Optional)</label>
+                  <input type="text" id="cfgFirebaseApiKey" class="form-input" placeholder="AIzaSy..." style="font-family:monospace; font-size:0.88rem;">
+                </div>
+
+                <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;">
+                  <button type="submit" class="btn btn-primary" id="btnSaveCloudConfig">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>⚡ Cloud Connect Karein</span>
+                  </button>
+
+                  <button type="button" class="btn btn-outline" id="btnForcePushToCloud" title="Is device ka sara data cloud par upload karein">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                    <span>📤 Local Data Cloud Par Bhejein (Push)</span>
+                  </button>
+
+                  <button type="button" class="btn btn-ghost" id="btnForcePullFromCloud" title="Cloud se fresh data download karein">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    <span>📥 Cloud Se Data Mangwayein (Pull)</span>
+                  </button>
+
+                  <button type="button" class="btn btn-danger btn-sm" id="btnDisconnectCloud" style="margin-left:auto;">
+                    <span>Disconnect</span>
+                  </button>
+                </div>
+              </form>
+
+              <!-- Step-by-Step Roman Urdu Guide Accordion / Box -->
+              <div style="margin-top:24px; padding:16px; border-radius:var(--radius-md); background:rgba(0,0,0,0.3); border:1px solid var(--border-subtle);">
+                <div style="display:flex; align-items:center; justify-content:space-between; cursor:pointer;" onclick="const el = document.getElementById('cloudHelpGuideBox'); el.style.display = el.style.display === 'none' ? 'block' : 'none';">
+                  <h4 style="font-size:0.95rem; color:var(--accent-cyan); display:flex; align-items:center; gap:8px;">
+                    <span>📖</span>
+                    <span>100% Free Online Setup Guide (Shahid & Adnan Ke Mobile Par Chalanay Ka Tareeqa)</span>
+                  </h4>
+                  <span style="font-size:0.8rem; color:var(--text-muted); text-decoration:underline;">Guide Kholiye / Band Karein ▼</span>
+                </div>
+
+                <div id="cloudHelpGuideBox" style="margin-top:14px; font-size:0.86rem; color:var(--text-muted); line-height:1.7;">
+                  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-top:10px;">
+                    
+                    <div style="background:var(--bg-card); padding:14px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle);">
+                      <div style="font-weight:700; color:var(--text-main); margin-bottom:6px;">1. Free Firebase Database (2 Minute)</div>
+                      <ol style="padding-left:18px; margin:0;">
+                        <li>Apne mobile/PC me <strong>console.firebase.google.com</strong> kholein (Gmail login).</li>
+                        <li><strong>"Add project"</strong> dabayein aur project name <code>nethisab</code> likhein.</li>
+                        <li>Left menu me <strong>"Build ➔ Realtime Database"</strong> dabayein.</li>
+                        <li><strong>"Create Database"</strong> dabayein ➔ Location select karein ➔ <strong>"Start in test mode"</strong> select karein (is se read/write allow ho jata hai).</li>
+                        <li>Upar jo URL likha aye (jaise <code>https://nethisab-xxxx.firebaseio.com</code>) wo copy kar ke upar Database URL me paste kar ke <strong>"Cloud Connect"</strong> daba dein!</li>
+                      </ol>
+                    </div>
+
+                    <div style="background:var(--bg-card); padding:14px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle);">
+                      <div style="font-weight:700; color:var(--text-main); margin-bottom:6px;">2. Free Link Adnan Ko WhatsApp Bhejna</div>
+                      <ol style="padding-left:18px; margin:0;">
+                        <li>Is pure folder ko <strong>Netlify Drop</strong> (<code>drop.netlify.com</code>) par drag-and-drop karein ya GitHub Pages par daalein (100% free life-time).</li>
+                        <li>Netlify aapko ek link dega jaise <code>https://nethisab.netlify.app</code>.</li>
+                        <li>Yeh link <strong>Adnan ko WhatsApp par send kar dein</strong>.</li>
+                        <li>Adnan jaise hi mobile par kholega, app chal paregi!</li>
+                      </ol>
+                    </div>
+
+                    <div style="background:var(--bg-card); padding:14px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle);">
+                      <div style="font-weight:700; color:var(--text-main); margin-bottom:6px;">3. Mobile App Ki Tarah Save Karna (PWA)</div>
+                      <ol style="padding-left:18px; margin:0;">
+                        <li>Adnan apne Android phone ke Google Chrome me link khole.</li>
+                        <li>Upar 3 dots <code>⋮</code> dabaye aur <strong>"Add to Home screen"</strong> ya <strong>"Install App"</strong> dabaye.</li>
+                        <li>iPhone par Safari me <strong>Share button ➔ "Add to Home Screen"</strong> dabaye.</li>
+                        <li>Mobile ki screen par <strong>NetHisab Pro</strong> ka asli App icon ban jayega!</li>
+                        <li>Ab na laptop on rakhna padega, na koi fees lagegi!</li>
+                      </ol>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Partner Names Config -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Partnership Settings</h3>
+                <p class="card-subtitle">Dono partners ke naam aur hisab ratio</p>
+              </div>
+              <form id="settingsPartnersForm" class="styled-form">
+                <div class="form-group">
+                  <label for="cfgPartner1Name">Aapka Naam (Partner 1)</label>
+                  <input type="text" id="cfgPartner1Name" class="form-input" value="Shahid" required>
+                </div>
+                <div class="form-group">
+                  <label for="cfgPartner2Name">Aapke Partner Ka Naam (Partner 2)</label>
+                  <input type="text" id="cfgPartner2Name" class="form-input" value="Adnan" required>
+                </div>
+                <div class="form-group">
+                  <label for="cfgPartnerRatio">Profit Split Ratio (%)</label>
+                  <select id="cfgPartnerRatio" class="form-select">
+                    <option value="50-50">50% - 50% (Barabar)</option>
+                    <option value="60-40">60% Shahid - 40% Partner</option>
+                    <option value="40-60">40% Shahid - 60% Partner</option>
+                    <option value="70-30">70% Shahid - 30% Partner</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="cfgCurrency">Currency Symbol</label>
+                  <input type="text" id="cfgCurrency" class="form-input" value="Rs.">
+                </div>
+                <button type="submit" class="btn btn-primary">Settings Save Karein</button>
+              </form>
+            </div>
+
+            <!-- Backup & Data Management -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Data Backup & Restore</h3>
+                <p class="card-subtitle">Apna tamam data computer me save rakhein</p>
+              </div>
+              <div class="backup-actions">
+                <div class="backup-card-item">
+                  <div>
+                    <h4>1-Click Backup File Download</h4>
+                    <p>Tamam 250 users, bills, aur collections ka JSON file download karein.</p>
+                  </div>
+                  <button class="btn btn-outline" id="btnDownloadBackupJson">Backup Download</button>
+                </div>
+
+                <div class="backup-card-item">
+                  <div>
+                    <h4>Restore / Backup File Upload</h4>
+                    <p>Pehlay se save shuda file se data wapas load karein.</p>
+                  </div>
+                  <input type="file" id="fileRestoreInput" accept=".json" style="display:none">
+                  <button class="btn btn-secondary" onclick="document.getElementById('fileRestoreInput').click()">File Restore Karein</button>
+                </div>
+
+                <div class="backup-card-item">
+                  <div>
+                    <h4>Asal WhatsApp Register Data (245 Users & Bills)</h4>
+                    <p>Register ki tamam 10 sheets ke tamam 245 users aur April se August tak ke bills load karein.</p>
+                  </div>
+                  <button class="btn btn-primary" id="btnLoadDemoData">Asal Register Data Load Karein</button>
+                </div>
+
+                <div class="backup-card-item danger-zone">
+                  <div>
+                    <h4>Tamam Data Reset (Khatam)</h4>
+                    <p>Agar bilkul fresh shuru karna ho to reset karein.</p>
+                  </div>
+                  <button class="btn btn-danger" id="btnResetAllData">Reset Data</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ==============================================
+       MODAL: COLLECT PAYMENT & BILL UPDATE
+       ============================================== -->
+  <div class="modal-overlay" id="modalPayment">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="payModalUserTitle">Bill Wasool Karein</h3>
+          <p class="modal-subtitle" id="payModalUserSub">User details</p>
+        </div>
+        <button class="modal-close" id="btnClosePayModal">&times;</button>
+      </div>
+      <form id="formCollectPayment" class="styled-form">
+        <input type="hidden" id="payUserId">
+        <input type="hidden" id="payTargetMonth">
+
+        <!-- Month Badge Banner -->
+        <div style="background: rgba(59, 130, 246, 0.12); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: var(--radius-md); padding: 10px 14px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:1.2rem;">📅</span>
+            <div>
+              <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; font-weight:700;">Billing Month (Mahina):</div>
+              <strong id="payTargetMonthLabel" style="font-size:0.96rem; color:var(--accent-primary);">October 2026</strong>
+            </div>
+          </div>
+          <span class="badge" style="background:rgba(59, 130, 246, 0.2); color:var(--accent-primary); border:1px solid rgba(59, 130, 246, 0.4); font-size:0.75rem;">Month Bill Update</span>
+        </div>
+
+        <div class="bill-summary-banner">
+          <div class="sum-item">
+            <span>Package Bill:</span>
+            <strong id="paySummaryCurrentBill">Rs. 0</strong>
+          </div>
+          <div class="sum-item">
+            <span>Pichla Baqaya:</span>
+            <strong class="text-danger" id="paySummaryArrears">Rs. 0</strong>
+          </div>
+          <div class="sum-item highlight">
+            <span>Kul Wajib-ul-Ada:</span>
+            <strong class="text-blue" id="paySummaryTotalDue">Rs. 0</strong>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="payMonthlyFee">Is Mahine Ka Package Bill (Rs.) * <small style="color:var(--text-muted);">(Mahana Rate)</small></label>
+            <input type="number" id="payMonthlyFee" min="0" required class="form-input form-input-lg" placeholder="e.g. 2000">
+          </div>
+          <div class="form-group">
+            <label for="payAmount">Wasool Shuda Raqam (Rs.) * <small style="color:var(--accent-cyan);">(0 agar abhi nahi mila)</small></label>
+            <input type="number" id="payAmount" min="0" required class="form-input form-input-lg" placeholder="e.g. 200, 2000, 0">
+          </div>
+        </div>
+
+        <!-- Quick Amount Chips -->
+        <div class="quick-amounts-bar">
+          <span class="quick-amt-label">Asan Buttons:</span>
+          <button type="button" class="amt-chip chip-full" id="btnPayFull">Pura Bill</button>
+          <button type="button" class="amt-chip" onclick="app.setQuickPayAmount(0)">Rs. 0 (Unpaid)</button>
+          <button type="button" class="amt-chip" onclick="app.setQuickPayAmount(500)">Rs. 500</button>
+          <button type="button" class="amt-chip" onclick="app.setQuickPayAmount(1000)">Rs. 1000</button>
+          <button type="button" class="amt-chip" onclick="app.setQuickPayAmount(1500)">Rs. 1500</button>
+          <button type="button" class="amt-chip" onclick="app.setQuickPayAmount(2000)">Rs. 2000</button>
+          <button type="button" class="amt-chip" onclick="app.setQuickPayAmount(3000)">Rs. 3000</button>
+        </div>
+
+        <!-- Live Calculation Output -->
+        <div class="live-calc-box" id="payLiveCalcBox">
+          <div class="calc-row">
+            <span>Wasool Shuda:</span>
+            <strong id="calcWasoolText" class="text-success">Rs. 0</strong>
+          </div>
+          <div class="calc-row">
+            <span id="calcRemainingLabel">Baqaya Reh Jayega:</span>
+            <strong id="calcRemainingText" class="text-danger">Rs. 0</strong>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="payCollector">Kamaee Kis Ne Wasool Ki? *</label>
+            <select id="payCollector" class="form-select form-input-lg" required>
+              <option value="p2" id="optPayP2">Adnan (Adnan ke paas gye)</option>
+              <option value="p1" id="optPayP1">Shahid (Shahid ke paas gye)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="payMethod">Wasooli Ka Zareea (Method)</label>
+            <select id="payMethod" class="form-select">
+              <option value="Cash">Cash (Naqad)</option>
+              <option value="EasyPaisa">EasyPaisa</option>
+              <option value="JazzCash">JazzCash</option>
+              <option value="Bank">Bank Transfer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="payDate">Tareekh</label>
+            <input type="date" id="payDate" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="payNotes">Koyi Note / Waja (Optional)</label>
+            <input type="text" id="payNotes" placeholder="e.g. 200 dia hai baqi agle mahine dega" class="form-input">
+          </div>
+        </div>
+
+        <div class="modal-actions" style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <button type="button" class="btn btn-outline text-danger btn-sm" id="btnDeleteMonthBill" style="display:none;" onclick="app.handleDeleteMonthBill()">
+              🗑️ Is Mahine Ka Record Delete Karein
+            </button>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <button type="button" class="btn btn-secondary" id="btnCancelPay">Cancel</button>
+            <button type="submit" class="btn btn-success btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Bill / Payment Save Karein</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       MODAL: CUSTOMER MONTHLY HISTORY & LEDGER
+       ============================================== -->
+  <div class="modal-overlay" id="modalCustomerHistory">
+    <div class="modal-card modal-card-lg">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="historyModalTitle">Customer Mahana Khata (History)</h3>
+          <p class="modal-subtitle" id="historyModalSub">Har mahine ka pura hisab kitab</p>
+        </div>
+        <button class="modal-close" id="btnCloseHistoryModal">&times;</button>
+      </div>
+      <div class="modal-body-scrollable">
+
+        <!-- Quick Add / Update Bill for Any Month Bar -->
+        <div class="khata-toolbar">
+          <div class="khata-add-title">
+            <span>➕ <strong>Kisi Bhe Mahine Ka Bill / Wasooli Add Ya Update Karein:</strong></span>
+          </div>
+          <div class="khata-add-controls">
+            <select id="khataSelectMonth" class="form-select" style="padding:7px 10px; font-size:0.84rem;">
+              <option value="01">01 - January (جنوری)</option>
+              <option value="02">02 - February (فروری)</option>
+              <option value="03">03 - March (مارچ)</option>
+              <option value="04">04 - April (اپریل)</option>
+              <option value="05">05 - May (مئی)</option>
+              <option value="06">06 - June (جون)</option>
+              <option value="07">07 - July (جولائی)</option>
+              <option value="08">08 - August (اگست)</option>
+              <option value="09">09 - September (ستمبر)</option>
+              <option value="10">10 - October (اکتوبر)</option>
+              <option value="11">11 - November (نومبر)</option>
+              <option value="12">12 - December (دسمبر)</option>
+            </select>
+            <select id="khataSelectYear" class="form-select" style="padding:7px 10px; font-size:0.84rem;">
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026" selected>2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+            </select>
+            <button type="button" class="btn btn-primary" id="btnKhataAddMonthBill" style="padding:7px 14px; font-size:0.82rem; font-weight:700; display:inline-flex; align-items:center; gap:6px;">
+              <span>➕ Bill Add / Edit Karein</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Mahina (Month)</th>
+                <th>Package Bill</th>
+                <th>Pichla Baqaya</th>
+                <th>Kul Wajib Ada</th>
+                <th>Wasool Shuda</th>
+                <th>Wasool Karinda</th>
+                <th>Closing Balance</th>
+                <th class="text-right">Action (Bill Update)</th>
+              </tr>
+            </thead>
+            <tbody id="customerHistoryTableBody">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Connection History Log Section in Ledger -->
+        <div class="connection-history-section" style="margin-top:20px; border-top:1px solid var(--border-subtle); padding-top:16px;">
+          <h4 style="font-size:0.95rem; margin-bottom:10px;">🔌 Connection Chalu / Band Karne Ka Record (Timeline):</h4>
+          <ul id="customerConnHistoryList" class="conn-history-list">
+            <!-- Populated by JS -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       MODAL: PARTNER SETTLEMENT TRANSFER
+       ============================================== -->
+  <div class="modal-overlay" id="modalSettlement">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="settlementModalTitle">Partnership Hisab Clear Karein</h3>
+          <p class="modal-subtitle" id="settlementModalSub">Dono partners ke aapas me cash transfer ka record</p>
+        </div>
+        <button class="modal-close" id="btnCloseSettlementModal">&times;</button>
+      </div>
+      <form id="formSettlementTransfer" class="styled-form">
+        <input type="hidden" id="settlePayerKey">
+        <input type="hidden" id="settleReceiverKey">
+
+        <div class="bill-summary-banner" id="settleSummaryBanner">
+          <div class="sum-item">
+            <span>Kul Dena Banta Hai:</span>
+            <strong class="text-danger" id="settleSuggestedTotal">Rs. 0</strong>
+          </div>
+          <div class="sum-item">
+            <span>Pehle Se Ada Shuda:</span>
+            <strong class="text-success" id="settleAlreadyPaid">Rs. 0</strong>
+          </div>
+          <div class="sum-item highlight">
+            <span>Baqaya Ada Karna:</span>
+            <strong class="text-blue" id="settleRemainingDue">Rs. 0</strong>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="settleAmount">Diye Gaye Paise (Rs.) * <small style="color:var(--accent-cyan); font-weight:normal;">(Aap pura ya thora hisab de sakte hain)</small></label>
+            <input type="number" id="settleAmount" min="1" required class="form-input form-input-lg" placeholder="e.g. 40750">
+            <div class="quick-amounts-bar">
+              <button type="button" class="amt-chip chip-full" id="btnSettleFullAmount">Pura Hisab Clear Karein</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="settleDirectionSelect">Paisa Kis Ne Kis Ko Dia? *</label>
+            <select id="settleDirectionSelect" class="form-select form-input-lg" style="font-weight:700; color:var(--accent-cyan);">
+              <option value="p1_to_p2" id="optDirP1ToP2">Shahid ne Adnan ko diye (Shahid ➔ Adnan)</option>
+              <option value="p2_to_p1" id="optDirP2ToP1">Adnan ne Shahid ko diye (Adnan ➔ Shahid)</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="settleLiveImpactBanner" style="margin-bottom:14px; background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.3); border-radius:var(--radius-md); padding:10px 14px; font-size:0.88rem;">
+          <span id="settlePreviewBaqayaText">💡 <strong>Nateeja:</strong> Ye payment save hone par Baqaya = <strong class="text-success">Rs. 0 (Bilkul Clear / Zero Balance)</strong></span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="settleMethod">Payment Ka Zareea (Method)</label>
+            <select id="settleMethod" class="form-select">
+              <option value="Cash">Cash (Naqad)</option>
+              <option value="EasyPaisa">EasyPaisa</option>
+              <option value="JazzCash">JazzCash</option>
+              <option value="Bank">Bank Transfer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="settleDate">Tareekh</label>
+            <input type="date" id="settleDate" class="form-input">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="settleNotes">Koyi Note / Detail (Optional)</label>
+          <input type="text" id="settleNotes" placeholder="e.g. Is mahine ka hisab clear kia" class="form-input">
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" id="btnCancelSettlement">Cancel</button>
+          <button type="submit" class="btn btn-success btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Payment Save Karein (0 Balance)</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       MODAL: TOGGLE STATUS (DISABLE / ENABLE USER)
+       ============================================== -->
+  <div class="modal-overlay" id="modalToggleStatus">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="toggleStatusModalTitle">Connection Status Tabdeel Karein</h3>
+          <p class="modal-subtitle" id="toggleStatusModalSub">Customer details</p>
+        </div>
+        <button class="modal-close" id="btnCloseToggleStatusModal">&times;</button>
+      </div>
+      <form id="formToggleStatus" class="styled-form">
+        <input type="hidden" id="toggleStatusUserId">
+        <input type="hidden" id="toggleStatusTargetAction">
+
+        <div class="status-action-preview-banner" id="statusActionPreviewBanner">
+          <!-- Text preview of action -->
+          <span id="previewActionIcon" style="font-size: 1.6rem;">🔴</span>
+          <div>
+            <strong id="previewActionHeadline">User Connection Band Kiya Ja Raha Hai</strong>
+            <p id="previewActionSub" style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">Is tareekh se user ka status save ho jayega.</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="toggleStatusDate">Kis Tareekh Ko <span id="toggleStatusActionLabel">Band</span> Kia? *</label>
+          <input type="date" id="toggleStatusDate" class="form-input form-input-lg" required>
+        </div>
+
+        <div class="form-group">
+          <label for="toggleStatusReason">Waja / Sabab / Note (Optional)</label>
+          <input type="text" id="toggleStatusReason" placeholder="e.g. 2 mahine se bill ada nahi kia / ghar shift ho rhe hain" class="form-input">
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" id="btnCancelToggleStatus">Cancel</button>
+          <button type="submit" class="btn btn-danger" id="btnSubmitToggleStatus">
+            <span id="btnSubmitToggleStatusText">Status Update Karein</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       MODAL: ADD / EDIT USER
+       ============================================== -->
+  <div class="modal-overlay" id="modalUser">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="userModalTitle">Naya Customer Shamil Karein</h3>
+          <p class="modal-subtitle">User ka basic record aur package tafseel</p>
+        </div>
+        <button class="modal-close" id="btnCloseUserModal">&times;</button>
+      </div>
+      <form id="formUser" class="styled-form">
+        <input type="hidden" id="editUserId">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="userName">Customer Ka Naam *</label>
+            <input type="text" id="userName" placeholder="e.g. Muhammad Aslam" required class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="userPhone">Mobile / WhatsApp Number *</label>
+            <input type="text" id="userPhone" placeholder="03001234567" required class="form-input">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="userArea">Area / Gali / Muhalla *</label>
+            <input type="text" id="userArea" placeholder="e.g. Street 4, Sector B" required class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="userPackage">Internet Package</label>
+            <select id="userPackage" class="form-select">
+              <option value="8 Mbps">8 Mbps</option>
+              <option value="12 Mbps">12 Mbps</option>
+              <option value="15 Mbps">15 Mbps</option>
+              <option value="20 Mbps" selected>20 Mbps</option>
+              <option value="25 Mbps">25 Mbps</option>
+              <option value="30 Mbps">30 Mbps</option>
+              <option value="Custom">Custom Package</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="userMonthlyFee">Mahana Bill (Rs.) *</label>
+            <input type="number" id="userMonthlyFee" placeholder="e.g. 2000" min="100" required class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="userInitialArrears">Pichla Purana Baqaya (Arrears Rs.)</label>
+            <input type="number" id="userInitialArrears" placeholder="0" min="0" value="0" class="form-input">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="userCnic">CNIC / ID Card Number (شناختی کارڈ)</label>
+            <input type="text" id="userCnic" placeholder="35201-1234567-1" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="userConnectionDate">Kis Din Connection Lagaya? (Tareekh)</label>
+            <input type="date" id="userConnectionDate" class="form-input">
+          </div>
+        </div>
+
+        <div class="form-row" style="background:rgba(245,158,11,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:var(--radius-md); padding:10px 12px; margin-bottom:12px;">
+          <div class="form-group">
+            <label for="userInstallFee">Naye Connection Ki Fees (Installation Rs.)</label>
+            <input type="number" id="userInstallFee" placeholder="e.g. 5000" min="0" value="0" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="userInstallStatus">Installation Fees Mili?</label>
+            <select id="userInstallStatus" class="form-select">
+              <option value="paid">Paid (Ada Ho Gayi)</option>
+              <option value="unpaid">Unpaid (Baqaya Hai)</option>
+              <option value="free">Free / Maaf (Rs. 0)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="userInstallCollector">Kis Partner Ne Wasool Ki?</label>
+            <select id="userInstallCollector" class="form-select">
+              <option value="p1">Shahid (Shahid ke paas gye)</option>
+              <option value="p2">Adnan (Adnan ke paas gye)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="userDefaultCollector">Aam Tor Par Mahana Bill Kaun Leta Hai?</label>
+            <select id="userDefaultCollector" class="form-select">
+              <option value="p2">Adnan (Aksar Adnan leta hai)</option>
+              <option value="p1">Shahid (Aksar Shahid leta hai)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="userStatus">Connection Status</label>
+            <select id="userStatus" class="form-select">
+              <option value="active">Active (Chalu)</option>
+              <option value="suspended">Suspended / Band</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="userIpOrMac">Router IP / Mikrotik Username (Optional)</label>
+          <input type="text" id="userIpOrMac" placeholder="e.g. aslam_user ya 192.168.10.45" class="form-input">
+        </div>
+
+        <div class="modal-actions" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+          <button type="button" class="btn btn-danger btn-sm" id="btnDeleteUserModal" style="display:none;">🗑️ User Delete Karein</button>
+          <div style="display:flex; gap:10px; margin-left:auto;">
+            <button type="button" class="btn btn-secondary" id="btnCancelUser">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="btnSaveUser">User Save Karein</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       MODAL: CUSTOMER PROFILE & FULL DATA
+       ============================================== -->
+  <div class="modal-overlay" id="modalUserProfile">
+    <div class="modal-card modal-card-lg">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="profModalTitle">Customer Mukammal Data & Record</h3>
+          <p class="modal-subtitle">ID Card, Connection Date, Installation Fee aur Raabta</p>
+        </div>
+        <button class="modal-close" id="btnCloseProfModal">&times;</button>
+      </div>
+
+      <div class="modal-body-scrollable">
+        <div class="profile-hero-card">
+          <div class="profile-avatar-large" id="profAvatar">A</div>
+          <div class="profile-main-meta">
+            <h2 id="profName">Muhammad Aslam</h2>
+            <p><span id="profId">USR-102</span> • <span id="profStatusBadge">🟢 Chalu</span> • <span id="profArea">Street 4</span></p>
+          </div>
+          <button class="btn btn-sm btn-outline" id="profBtnEdit" style="margin-left:auto;">
+            ✏️ Data Edit Karein
+          </button>
+        </div>
+
+        <div class="profile-info-grid">
+          <div class="info-group-box">
+            <span class="info-box-label">📱 Mobile / WhatsApp</span>
+            <strong id="profPhone">03001234567</strong>
+          </div>
+
+          <div class="info-group-box">
+            <span class="info-box-label">🪪 CNIC / ID Card No.</span>
+            <strong id="profCnic">35201-1234567-1</strong>
+          </div>
+
+          <div class="info-group-box">
+            <span class="info-box-label">📅 Connection Lagane Ki Tareekh</span>
+            <strong id="profConnDate">15 May 2026</strong>
+          </div>
+
+          <div class="info-group-box">
+            <span class="info-box-label">⚡ Internet Package</span>
+            <strong id="profPackage">20 Mbps (Rs. 2500/Month)</strong>
+          </div>
+
+          <div class="info-group-box highlight-install">
+            <span class="info-box-label">🛠️ Installation Fee (Naya Connection)</span>
+            <strong id="profInstallFee">Rs. 5,000</strong>
+            <small id="profInstallStatus">Paid • Wasool Karinda: Adnan</small>
+          </div>
+
+          <div class="info-group-box">
+            <span class="info-box-label">🌐 Router IP / Mikrotik Username</span>
+            <strong id="profRouter">192.168.10.45</strong>
+          </div>
+        </div>
+
+        <!-- Customer's Charger & Complain History -->
+        <div class="profile-extra-section" style="margin-top: 18px; background: rgba(245, 158, 11, 0.05); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: var(--radius-md); padding: 14px 16px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <div>
+              <strong style="color:var(--accent-warning); font-size:0.92rem;">🔌 Charger / Complain Fees Record:</strong>
+              <p style="font-size:0.75rem; color:var(--text-muted); margin-top:2px;">Is customer se liye gaye extra charges ka hisab</p>
+            </div>
+            <button type="button" class="btn btn-sm btn-warning" id="profBtnAddExtra">
+              + Is Customer Se Fees Wasool Karein
+            </button>
+          </div>
+          <div id="profExtraList" style="font-size:0.84rem;">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       MODAL: EXTRA INCOME (CHARGER / COMPLAIN FEES)
+       ============================================== -->
+  <div class="modal-overlay" id="modalExtraIncome">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="extraIncomeModalTitle">🔌 Charger / Complain Ki Wasooli Add Karein</h3>
+          <p class="modal-subtitle">Customer se liye gaye charger ya complaint service ke paise hisab me darj karein</p>
+        </div>
+        <button class="modal-close" id="btnCloseExtraIncomeModal">&times;</button>
+      </div>
+      <form id="formExtraIncome" class="styled-form">
+        <input type="hidden" id="editExtraIncomeId">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="extraIncomeType">Wasooli Ki Qisam (Category) *</label>
+            <select id="extraIncomeType" class="form-select" required>
+              <option value="Charger" selected>🔌 Router Charger Sale (چارجر فروخت)</option>
+              <option value="Complaint">🛠️ Complaint Visit / Repair (کمپلین فیس)</option>
+              <option value="Fiber/Wire">🧵 Fiber Wire / Patch Cord (تار / جوائنٹ)</option>
+              <option value="New Router">📡 New Router Sale (نیا راؤٹر فروخت)</option>
+              <option value="Other">✨ Other Extra Service (دیگر سروس)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="extraIncomeAmount">Raqam (Rs.) *</label>
+            <input type="number" id="extraIncomeAmount" placeholder="e.g. 1000" min="1" required class="form-input form-input-lg" style="font-weight:700; color:var(--accent-warning);">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="extraIncomeCollector">Paisay Kis Ne Receive Kiye? (Cash In Hand) *</label>
+            <select id="extraIncomeCollector" class="form-select form-input-lg" style="border-color:var(--accent-warning); color:var(--text-main); font-weight:700;" required>
+              <option value="p2" id="optExtraP2">Adnan (Adnan ke paas gye)</option>
+              <option value="p1" id="optExtraP1">Shahid (Shahid ke paas gye)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="extraIncomeCustomer">Kis Customer Se Liye? (Optional)</label>
+            <select id="extraIncomeCustomer" class="form-select">
+              <option value="">— Aam / Bahar Ka Customer (Walk-in/General) —</option>
+              <!-- Populated dynamically with registered users -->
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="extraIncomeTitle">Tafseel / Title (Naam)</label>
+            <input type="text" id="extraIncomeTitle" placeholder="e.g. TP-Link 12V 1.5A Charger ya Fiber Joint Repair" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="extraIncomeDate">Tareekh *</label>
+            <input type="date" id="extraIncomeDate" class="form-input" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="extraIncomeNotes">Koyi Note / Waja (Optional)</label>
+          <input type="text" id="extraIncomeNotes" placeholder="e.g. Purana charger bijli se jal gya tha" class="form-input">
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" id="btnCancelExtraIncome">Cancel</button>
+          <button type="submit" class="btn btn-warning btn-lg" style="background: linear-gradient(135deg, #f59e0b, #d97706); color:#000; font-weight:800;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Raqam Hisab Me Save Karein</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Action Button for Mobile Screens -->
+  <button class="mobile-fab-add-user" onclick="app.openUserModal()" title="Naya Internet Customer Add Karein">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+    <span>+ Naya User</span>
+  </button>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="appToast">Notification message here</div>
+
+  <!-- Firebase Realtime Database SDK (Official CDN, Free Tier Compat) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
+  <!-- Scripts -->
+  <script src="sampleData.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

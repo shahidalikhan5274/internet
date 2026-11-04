@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Test</title></head>
+<body>
+  <div id="customersTableContainer"></div>
+  <table id="customersTable"><tbody id="customersTableBody"></tbody></table>
+  <span id="partner1NameLabel"></span>
+  <span id="partner2NameLabel"></span>
+  <span id="avatarP1"></span>
+  <span id="avatarP2"></span>
+  <span id="dashP1Title"></span>
+  <span id="dashP2Title"></span>
+  <span id="kpiExpectedBill"></span>
+  <span id="kpiActiveUsersCount"></span>
+  <span id="kpiTotalCollected"></span>
+  <span id="kpiCollectionRate"></span>
+  <span id="kpiTotalPending"></span>
+  <span id="kpiUnpaidUsersCount"></span>
+  <span id="kpiNetProfit"></span>
+  <span id="kpiTotalExpenseSub"></span>
+  <span id="totalUsersBadge"></span>
+  <span id="defaulterCountBadge"></span>
+  <span id="dashP1Collected"></span>
+  <span id="dashP2Collected"></span>
+  <span id="dashP1Foot"></span>
+  <span id="dashP2Foot"></span>
+  <span id="dashVerdictMain"></span>
+  <span id="dashVerdictDetail"></span>
+  <span id="btnDashSettlePay"></span>
+  <span id="usersTableCountInfo"></span>
+  <span id="defaultersTableCountInfo"></span>
+  <tbody id="defaultersTableBody"></tbody>
+  <select id="filterArea"></select>
+  <select id="selectMonthName"></select>
+  <select id="selectYear"></select>
+
+  <div id="btnCloudStatusPill"></div>
+  <div id="cloudStatusText"></div>
+  <div id="sidebarSyncDot"></div>
+  <div id="sidebarSyncLabel"></div>
+  <div id="cloudStatusBadgeDisplay"></div>
+  <div id="cloudBadgeText"></div>
+  <div id="cloudBannerIcon"></div>
+  <div id="cloudBannerTitle"></div>
+  <div id="cloudLastSyncTime"></div>
+  <div id="cloudLastSyncBanner"></div>
+  <div id="appToast"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="sampleData.js"></script>
+  
+  <script>
+    // Test connectFirebase with ONLY dataRef.once('value') or WITHOUT dataRef.on('value')
+    window.addEventListener('DOMContentLoaded', () => {
+      NetHisabApp.prototype.connectFirebase = function(config) {
+        console.log("CF: Starting custom connectFirebase...");
+        const cleanDbUrl = (config.databaseURL || '').trim().replace(/\/$/, '');
+        const fbConfig = { databaseURL: cleanDbUrl };
+        const appInstance = firebase.initializeApp(fbConfig, 'nethisab_sync_app_step');
+        this.firebaseDb = appInstance.database();
+        this.isCloudSyncActive = true;
+        this.updateCloudStatusUI('connected', 'Live Cloud Sync 🟢');
+        console.log("CF: Initialized DB. Ready!");
+      };
+    }, true);
+  </script>
+  
+  <script src="app.js"></script>
+</body>
+</html>

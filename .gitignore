@@ -1,0 +1,11 @@
+# Python test & cache files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Editor / System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
