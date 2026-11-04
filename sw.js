@@ -1,5 +1,5 @@
 // NetHisab Pro - Service Worker for Offline & Mobile Caching
-const CACHE_NAME = 'nethisab-cache-v2';
+const CACHE_NAME = 'nethisab-cache-v3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
