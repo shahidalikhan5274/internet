@@ -82,7 +82,7 @@ class NetHisabApp {
       try {
         const parsed = JSON.parse(saved);
         // Check if saved data has old dummy users (like Chaudhry Farooq or less than 50 users)
-        const hasDummy = parsed.users && (parsed.users.some(u => u.name === 'Chaudhry Farooq' || u.id === 'USR-101') || parsed.users.length < 50);
+        const hasDummy = parsed.users && (parsed.users.some(u => u.name === 'Chaudhry Farooq') || parsed.users.length < 50);
         if (!hasDummy && parsed.users && parsed.users.length > 50) {
           this.data = parsed;
           loadedFromSaved = true;
@@ -2693,17 +2693,21 @@ class NetHisabApp {
     if (!remoteData || !remoteData.users) return;
 
     // Reject old dummy demo data (less than 50 users or containing Chaudhry Farooq)
-    const isOldDummy = remoteData.users.some(u => u.name === 'Chaudhry Farooq' || u.id === 'USR-101') || remoteData.users.length < 50;
-    const localHasRealUsers = this.data && this.data.users && this.data.users.length > 50 && !this.data.users.some(u => u.name === 'Chaudhry Farooq');
+    const isOldDummy = remoteData.users.some(u => u.name === 'Chaudhry Farooq') || remoteData.users.length < 50;
+    const localHasRealUsers = this.data && this.data.users && this.data.users.length >= 50 && !this.data.users.some(u => u.name === 'Chaudhry Farooq');
 
     if (isOldDummy) {
-      console.warn("Ignoring cloud update because Firebase contains old 12 dummy users!");
-      // Automatically overwrite Firebase with the 245 real users so that Firebase is updated!
-      if (localHasRealUsers) {
-        this.forcePushToCloud(true);
-      } else {
-        this.loadSampleData();
-        this.forcePushToCloud(true);
+      console.warn("Ignoring cloud update because Firebase contains old dummy users!");
+      // Overwrite Firebase only once to prevent infinite loop
+      if (!this._isFixingDummyData) {
+        this._isFixingDummyData = true;
+        if (localHasRealUsers) {
+          this.forcePushToCloud(true);
+        } else {
+          this.loadSampleData();
+          this.forcePushToCloud(true);
+        }
+        setTimeout(() => { this._isFixingDummyData = false; }, 5000);
       }
       return;
     }
