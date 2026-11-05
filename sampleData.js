@@ -42,7 +42,7 @@ window.SAMPLE_ISP_DATA = {
     {
       "id": "USR-003",
       "name": "Allied-abid",
-      "phone": "",
+      "phone": "03067865975",
       "area": "Main Area",
       "package": "4500 Plan",
       "monthlyFee": 4500,
