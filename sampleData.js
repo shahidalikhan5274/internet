@@ -6467,6 +6467,14 @@ window.SAMPLE_ISP_DATA = {
         "date": "2025-12-10",
         "method": "Cash",
         "notes": ""
+      },
+      "USR-222": {
+        "paidAmount": 0,
+        "monthlyFee": 0,
+        "collector": "",
+        "date": "",
+        "method": "",
+        "notes": "Dash — is mahine ka bill skip (hisab me nahi)"
       }
     },
     "2026-01": {
@@ -7797,6 +7805,14 @@ window.SAMPLE_ISP_DATA = {
         "date": "2026-01-10",
         "method": "Cash",
         "notes": ""
+      },
+      "USR-221": {
+        "paidAmount": 0,
+        "monthlyFee": 0,
+        "collector": "",
+        "date": "",
+        "method": "",
+        "notes": "Dash — is mahine ka bill skip (hisab me nahi)"
       }
     },
     "2026-02": {
