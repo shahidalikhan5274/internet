@@ -1115,7 +1115,7 @@ class NetHisabApp {
       const matchSearch = !searchTerm ||
         user.name.toLowerCase().includes(searchTerm) ||
         user.id.toLowerCase().includes(searchTerm) ||
-        user.phone.toLowerCase().includes(searchTerm) ||
+        (user.phone || '').toLowerCase().includes(searchTerm) ||
         user.area.toLowerCase().includes(searchTerm);
       if (!matchSearch) return false;
 
