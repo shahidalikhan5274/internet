@@ -194,8 +194,27 @@ class NetHisabApp {
       return Number(user.initialArrears) || 0;
     }
 
+    // BILLING-START RULE (2026-11-05): kisi user se sirf us waqt se bill
+    // manga jata hai jab se wo customer hai:
+    //  - Jo user Nov 2025–Mar 2026 wali purani register (list) mein hai,
+    //    uska hisab register ke pehle mahine (Nov 2025) se shuru hota
+    //    hai — khaali mahine ka matlab "bill nahi aya" hai, pending
+    //    banta hai (jese Waqas1 ka Nov: 1200 pending).
+    //  - Jo user us list mein hai hi nahi (April ke baad join hua, jese
+    //    Amiradacolony 23 April), uska hisab uski pehli bill entry
+    //    wale mahine se shuru hota hai — warna usko Nov–Mar ka ghalat
+    //    baqaya dikhne lagta (e.g. Amiradacolony ko April mein Rs 25,000).
+    const firstBillMonth = allMonths.find(m => this.data.bills[m] && this.data.bills[m][userId]);
+    const registerStart = allMonths[0]; // '2025-11' — purani register ka pehla mahina
+    const inOldRegister = allMonths.some(m => m < '2026-04' && this.data.bills[m] && this.data.bills[m][userId]);
+    const billingStart = inOldRegister ? registerStart : firstBillMonth;
+    const billableMonths = billingStart ? priorMonths.filter(m => m >= billingStart) : [];
+    if (billableMonths.length === 0) {
+      return Number(user.initialArrears) || 0;
+    }
+
     let runningBalance = Number(user.initialArrears) || 0;
-    priorMonths.forEach(m => {
+    billableMonths.forEach(m => {
       const bill = this.data.bills[m] && this.data.bills[m][userId];
       const mFee = (bill && bill.monthlyFee !== undefined && bill.monthlyFee !== null && bill.monthlyFee !== '')
         ? Number(bill.monthlyFee)

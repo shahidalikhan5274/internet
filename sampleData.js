@@ -3929,6 +3929,6512 @@ window.SAMPLE_ISP_DATA = {
     }
   ],
   "bills": {
+    "2025-11": {
+      "USR-001": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-003": {
+        "paidAmount": 4500,
+        "monthlyFee": 4500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-004": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-006": {
+        "paidAmount": 1300,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-008": {
+        "paidAmount": 2500,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-009": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-010": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-011": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-012": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-013": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-015": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-017": {
+        "paidAmount": 1700,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-018": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-019": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-020": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-021": {
+        "paidAmount": 2300,
+        "monthlyFee": 2300,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-023": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-024": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-025": {
+        "paidAmount": 1800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-026": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-027": {
+        "paidAmount": 4000,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-028": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-029": {
+        "paidAmount": 1500,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-030": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-031": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-033": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-035": {
+        "paidAmount": 2700,
+        "monthlyFee": 2700,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-036": {
+        "paidAmount": 2300,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-037": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-039": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-040": {
+        "paidAmount": 2800,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-042": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-043": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-045": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-046": {
+        "paidAmount": 3000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-048": {
+        "paidAmount": 2200,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-049": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-050": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-051": {
+        "paidAmount": 1500,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-055": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-056": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-057": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-058": {
+        "paidAmount": 1200,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-059": {
+        "paidAmount": 2800,
+        "monthlyFee": 2800,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-062": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-063": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-064": {
+        "paidAmount": 1450,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-065": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-066": {
+        "paidAmount": 2500,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-067": {
+        "paidAmount": 6000,
+        "monthlyFee": 6000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-068": {
+        "paidAmount": 2750,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-069": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-070": {
+        "paidAmount": 1600,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-071": {
+        "paidAmount": 2600,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-074": {
+        "paidAmount": 1500,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-075": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-076": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-077": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-078": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-080": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-082": {
+        "paidAmount": 1600,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-083": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-084": {
+        "paidAmount": 1800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-085": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-086": {
+        "paidAmount": 1750,
+        "monthlyFee": 1750,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-087": {
+        "paidAmount": 2500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-090": {
+        "paidAmount": 2700,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-091": {
+        "paidAmount": 2000,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-092": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-093": {
+        "paidAmount": 2500,
+        "monthlyFee": 2200,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-094": {
+        "paidAmount": 2200,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-095": {
+        "paidAmount": 1450,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-096": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-101": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-102": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-103": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-106": {
+        "paidAmount": 2800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-107": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-108": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-109": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-110": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-111": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-112": {
+        "paidAmount": 3500,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-113": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-114": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-115": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-117": {
+        "paidAmount": 2200,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-118": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-119": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-120": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-121": {
+        "paidAmount": 1500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-122": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-123": {
+        "paidAmount": 4500,
+        "monthlyFee": 4500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-124": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-125": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-126": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-127": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-128": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-129": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-130": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-132": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-134": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-135": {
+        "paidAmount": 1200,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-136": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-137": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-138": {
+        "paidAmount": 1500,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-139": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-141": {
+        "paidAmount": 2300,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-142": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-143": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-144": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-145": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-146": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-147": {
+        "paidAmount": 1750,
+        "monthlyFee": 1750,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-148": {
+        "paidAmount": 3200,
+        "monthlyFee": 3200,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-151": {
+        "paidAmount": 2300,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-152": {
+        "paidAmount": 1500,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-153": {
+        "paidAmount": 1300,
+        "monthlyFee": 1300,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-154": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-155": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-156": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-157": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-158": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-159": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-160": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-161": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-163": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-164": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-165": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-166": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-167": {
+        "paidAmount": 1600,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-168": {
+        "paidAmount": 1450,
+        "monthlyFee": 1450,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-170": {
+        "paidAmount": 1900,
+        "monthlyFee": 1900,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-171": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-174": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-175": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-176": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-177": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-178": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-179": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-180": {
+        "paidAmount": 2300,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-182": {
+        "paidAmount": 3000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-183": {
+        "paidAmount": 3000,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-214": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-215": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-216": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-217": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-218": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-220": {
+        "paidAmount": 2400,
+        "monthlyFee": 2400,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-223": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-224": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-226": {
+        "paidAmount": 1800,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-229": {
+        "paidAmount": 2000,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-231": {
+        "paidAmount": 2400,
+        "monthlyFee": 2400,
+        "collector": "p2",
+        "date": "2025-11-10",
+        "method": "Cash",
+        "notes": ""
+      }
+    },
+    "2025-12": {
+      "USR-001": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-003": {
+        "paidAmount": 4500,
+        "monthlyFee": 4500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-004": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-006": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-008": {
+        "paidAmount": 2500,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-009": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-010": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-011": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-012": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-013": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-015": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-017": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-018": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-019": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-020": {
+        "paidAmount": 1000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-021": {
+        "paidAmount": 2800,
+        "monthlyFee": 2300,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-023": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-024": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-025": {
+        "paidAmount": 1800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-026": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-027": {
+        "paidAmount": 4000,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-028": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-029": {
+        "paidAmount": 1500,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-030": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-031": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-033": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-035": {
+        "paidAmount": 2700,
+        "monthlyFee": 2700,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-036": {
+        "paidAmount": 2300,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-037": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-038": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-039": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-040": {
+        "paidAmount": 4000,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-042": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-043": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-044": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-045": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-046": {
+        "paidAmount": 3000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-048": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-049": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-050": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-051": {
+        "paidAmount": 1500,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-053": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-056": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-057": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-058": {
+        "paidAmount": 1200,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-059": {
+        "paidAmount": 2800,
+        "monthlyFee": 2800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-062": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-063": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-064": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-065": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-066": {
+        "paidAmount": 2200,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-067": {
+        "paidAmount": 6000,
+        "monthlyFee": 6000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-068": {
+        "paidAmount": 2750,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-069": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-070": {
+        "paidAmount": 1600,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-071": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-074": {
+        "paidAmount": 1500,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-075": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-076": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-077": {
+        "paidAmount": 1200,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-078": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-080": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-082": {
+        "paidAmount": 1600,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-083": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-084": {
+        "paidAmount": 1800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-085": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-086": {
+        "paidAmount": 1750,
+        "monthlyFee": 1750,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-087": {
+        "paidAmount": 2500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-090": {
+        "paidAmount": 2700,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-091": {
+        "paidAmount": 2000,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-092": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-093": {
+        "paidAmount": 2500,
+        "monthlyFee": 2200,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-094": {
+        "paidAmount": 2200,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-095": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-096": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-101": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-102": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-103": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-106": {
+        "paidAmount": 2800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-107": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-108": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-109": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-110": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-111": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-112": {
+        "paidAmount": 4000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-113": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-114": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-115": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-117": {
+        "paidAmount": 2200,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-118": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-119": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-120": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-121": {
+        "paidAmount": 3000,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-122": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-123": {
+        "paidAmount": 4500,
+        "monthlyFee": 4500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-124": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-125": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-126": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-127": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-128": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-129": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-130": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-132": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-133": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-134": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-135": {
+        "paidAmount": 1700,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-136": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-137": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-138": {
+        "paidAmount": 1500,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-139": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-141": {
+        "paidAmount": 2300,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-142": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-143": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-144": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-145": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-146": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-147": {
+        "paidAmount": 1750,
+        "monthlyFee": 1750,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-148": {
+        "paidAmount": 3200,
+        "monthlyFee": 3200,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-152": {
+        "paidAmount": 1500,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-153": {
+        "paidAmount": 1300,
+        "monthlyFee": 1300,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-154": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-155": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-156": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-157": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-158": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-159": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-160": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-161": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-163": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-164": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-165": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-166": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-167": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-168": {
+        "paidAmount": 1450,
+        "monthlyFee": 1450,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-169": {
+        "paidAmount": 1250,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-170": {
+        "paidAmount": 1900,
+        "monthlyFee": 1900,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-171": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-174": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-175": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-176": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-177": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-178": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-179": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-180": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-182": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-184": {
+        "paidAmount": 5000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-185": {
+        "paidAmount": 2000,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-214": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-215": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-216": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-217": {
+        "paidAmount": 1750,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-218": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-220": {
+        "paidAmount": 2400,
+        "monthlyFee": 2400,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-221": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-223": {
+        "paidAmount": 1800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-224": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-225": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-226": {
+        "paidAmount": 1800,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-227": {
+        "paidAmount": 2300,
+        "monthlyFee": 2300,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-229": {
+        "paidAmount": 2000,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-230": {
+        "paidAmount": 1500,
+        "monthlyFee": 500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-231": {
+        "paidAmount": 2400,
+        "monthlyFee": 2400,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-234": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2025-12-10",
+        "method": "Cash",
+        "notes": ""
+      }
+    },
+    "2026-01": {
+      "USR-001": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-003": {
+        "paidAmount": 4500,
+        "monthlyFee": 4500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-004": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-005": {
+        "paidAmount": 2300,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-008": {
+        "paidAmount": 2500,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-009": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-010": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-011": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-012": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-013": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-015": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-017": {
+        "paidAmount": 1700,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-018": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-019": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-020": {
+        "paidAmount": 1000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-021": {
+        "paidAmount": 2300,
+        "monthlyFee": 2300,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-023": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-024": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-025": {
+        "paidAmount": 1800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-026": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-027": {
+        "paidAmount": 4000,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-028": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-029": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-030": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-031": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-033": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-035": {
+        "paidAmount": 2700,
+        "monthlyFee": 2700,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-036": {
+        "paidAmount": 1500,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-037": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-038": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-039": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-040": {
+        "paidAmount": 4000,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-042": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-043": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-044": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-045": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-046": {
+        "paidAmount": 3000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-048": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-050": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-051": {
+        "paidAmount": 1500,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-053": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-056": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-057": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-058": {
+        "paidAmount": 1200,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-059": {
+        "paidAmount": 2800,
+        "monthlyFee": 2800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-062": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-063": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-064": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-065": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-066": {
+        "paidAmount": 2200,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-067": {
+        "paidAmount": 6000,
+        "monthlyFee": 6000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-068": {
+        "paidAmount": 2750,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-069": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-070": {
+        "paidAmount": 1600,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-071": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-074": {
+        "paidAmount": 1500,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-075": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-076": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-078": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-080": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-083": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-084": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-085": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-086": {
+        "paidAmount": 1750,
+        "monthlyFee": 1750,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-087": {
+        "paidAmount": 2500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-090": {
+        "paidAmount": 2700,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-091": {
+        "paidAmount": 2600,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-092": {
+        "paidAmount": 1800,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-093": {
+        "paidAmount": 2500,
+        "monthlyFee": 2200,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-094": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-095": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-096": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-101": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-102": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-103": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-106": {
+        "paidAmount": 2800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-107": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-108": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-109": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-110": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-111": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-112": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-113": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-114": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-115": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-117": {
+        "paidAmount": 2200,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-118": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-119": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-120": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-121": {
+        "paidAmount": 3000,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-122": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-123": {
+        "paidAmount": 4500,
+        "monthlyFee": 4500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-124": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-125": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-126": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-127": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-128": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-129": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-130": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-132": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-133": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-134": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-135": {
+        "paidAmount": 1700,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-136": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-137": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-138": {
+        "paidAmount": 1500,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-139": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-141": {
+        "paidAmount": 2300,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-142": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-143": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-144": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-145": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-146": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-147": {
+        "paidAmount": 1750,
+        "monthlyFee": 1750,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-148": {
+        "paidAmount": 3200,
+        "monthlyFee": 3200,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-152": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-153": {
+        "paidAmount": 1300,
+        "monthlyFee": 1300,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-155": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-156": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-157": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-158": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-159": {
+        "paidAmount": 1700,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-160": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-161": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-163": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-164": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-165": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-166": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-167": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-168": {
+        "paidAmount": 1450,
+        "monthlyFee": 1450,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-169": {
+        "paidAmount": 1250,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-170": {
+        "paidAmount": 1900,
+        "monthlyFee": 1900,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-171": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-174": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-176": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-177": {
+        "paidAmount": 3000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-178": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-179": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-181": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-183": {
+        "paidAmount": 1800,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-184": {
+        "paidAmount": 1800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-185": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-186": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-189": {
+        "paidAmount": 3500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-191": {
+        "paidAmount": 3500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-193": {
+        "paidAmount": 2500,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-194": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-214": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-215": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-216": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-217": {
+        "paidAmount": 1750,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-218": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-219": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-220": {
+        "paidAmount": 2400,
+        "monthlyFee": 2400,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-222": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-223": {
+        "paidAmount": 1800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-224": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-225": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-226": {
+        "paidAmount": 1800,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-227": {
+        "paidAmount": 2300,
+        "monthlyFee": 2300,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-228": {
+        "paidAmount": 3000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-229": {
+        "paidAmount": 2000,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-230": {
+        "paidAmount": 1500,
+        "monthlyFee": 500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-231": {
+        "paidAmount": 2400,
+        "monthlyFee": 2400,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-233": {
+        "paidAmount": 2500,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-234": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-01-10",
+        "method": "Cash",
+        "notes": ""
+      }
+    },
+    "2026-02": {
+      "USR-001": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-003": {
+        "paidAmount": 4500,
+        "monthlyFee": 4500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-004": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-007": {
+        "paidAmount": 2200,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-008": {
+        "paidAmount": 2500,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-009": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-010": {
+        "paidAmount": 1200,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-011": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-012": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-013": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-015": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-017": {
+        "paidAmount": 1750,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-018": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-019": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-020": {
+        "paidAmount": 1000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-021": {
+        "paidAmount": 2300,
+        "monthlyFee": 2300,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-023": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-024": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-025": {
+        "paidAmount": 1800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-026": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-027": {
+        "paidAmount": 4000,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-028": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-029": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-030": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-031": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-033": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-035": {
+        "paidAmount": 2700,
+        "monthlyFee": 2700,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-036": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-037": {
+        "paidAmount": 1300,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-038": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-039": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-040": {
+        "paidAmount": 4000,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-042": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-043": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-045": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-046": {
+        "paidAmount": 3000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-048": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-049": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-050": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-051": {
+        "paidAmount": 1500,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-053": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-056": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-057": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-058": {
+        "paidAmount": 1200,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-059": {
+        "paidAmount": 2800,
+        "monthlyFee": 2800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-062": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-063": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-064": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-065": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-066": {
+        "paidAmount": 2200,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-067": {
+        "paidAmount": 6000,
+        "monthlyFee": 6000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-068": {
+        "paidAmount": 3000,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-069": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-070": {
+        "paidAmount": 1600,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-071": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-074": {
+        "paidAmount": 4000,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-075": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-076": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-078": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-080": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-083": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-084": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-085": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-086": {
+        "paidAmount": 1750,
+        "monthlyFee": 1750,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-090": {
+        "paidAmount": 2700,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-091": {
+        "paidAmount": 2000,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-092": {
+        "paidAmount": 1800,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-093": {
+        "paidAmount": 2500,
+        "monthlyFee": 2200,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-094": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-095": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-096": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-101": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-102": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-103": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-106": {
+        "paidAmount": 2800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-107": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-109": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-110": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-111": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-112": {
+        "paidAmount": 4000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-113": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-114": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-115": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-118": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-119": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-120": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-121": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-122": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-123": {
+        "paidAmount": 4500,
+        "monthlyFee": 4500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-124": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-125": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-126": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-127": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-128": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-129": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-130": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-132": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-133": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-134": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-135": {
+        "paidAmount": 1700,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-136": {
+        "paidAmount": 3000,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-137": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-138": {
+        "paidAmount": 1500,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-139": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-141": {
+        "paidAmount": 2300,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-142": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-143": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-144": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-145": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-146": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-147": {
+        "paidAmount": 1750,
+        "monthlyFee": 1750,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-148": {
+        "paidAmount": 3200,
+        "monthlyFee": 3200,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-152": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-153": {
+        "paidAmount": 1300,
+        "monthlyFee": 1300,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-155": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-156": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-157": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-158": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-159": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-160": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-161": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-163": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-164": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-165": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-166": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-167": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-168": {
+        "paidAmount": 1450,
+        "monthlyFee": 1450,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-169": {
+        "paidAmount": 1250,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-170": {
+        "paidAmount": 1900,
+        "monthlyFee": 1900,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-171": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-174": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-176": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-177": {
+        "paidAmount": 3000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-178": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-179": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-181": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-183": {
+        "paidAmount": 1800,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-184": {
+        "paidAmount": 1800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-185": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-186": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-187": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-189": {
+        "paidAmount": 3500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-190": {
+        "paidAmount": 3500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-191": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-192": {
+        "paidAmount": 1000,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-193": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-194": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-195": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-214": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-215": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-216": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-217": {
+        "paidAmount": 1750,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-218": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-219": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-220": {
+        "paidAmount": 2400,
+        "monthlyFee": 2400,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-221": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-222": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-224": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-225": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-226": {
+        "paidAmount": 1800,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-227": {
+        "paidAmount": 2300,
+        "monthlyFee": 2300,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-228": {
+        "paidAmount": 3000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-229": {
+        "paidAmount": 2000,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-230": {
+        "paidAmount": 1500,
+        "monthlyFee": 500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-231": {
+        "paidAmount": 2400,
+        "monthlyFee": 2400,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-233": {
+        "paidAmount": 2500,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-234": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-02-10",
+        "method": "Cash",
+        "notes": ""
+      }
+    },
+    "2026-03": {
+      "USR-001": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-003": {
+        "paidAmount": 4500,
+        "monthlyFee": 4500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-004": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-008": {
+        "paidAmount": 2500,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-009": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-010": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-011": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-012": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-015": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-017": {
+        "paidAmount": 1750,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-018": {
+        "paidAmount": 900,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-019": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-020": {
+        "paidAmount": 1000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-021": {
+        "paidAmount": 2300,
+        "monthlyFee": 2300,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-023": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-024": {
+        "paidAmount": 1000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-026": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-027": {
+        "paidAmount": 4000,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-028": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-029": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-030": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-031": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-033": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-035": {
+        "paidAmount": 2700,
+        "monthlyFee": 2700,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-036": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-038": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-039": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-040": {
+        "paidAmount": 4000,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-042": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-043": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-045": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-046": {
+        "paidAmount": 3000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-048": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-049": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-050": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-051": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-053": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-056": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-057": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-058": {
+        "paidAmount": 1200,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-059": {
+        "paidAmount": 2800,
+        "monthlyFee": 2800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-061": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-062": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-063": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-064": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-065": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-066": {
+        "paidAmount": 2200,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-067": {
+        "paidAmount": 6000,
+        "monthlyFee": 6000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-068": {
+        "paidAmount": 2800,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-069": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-070": {
+        "paidAmount": 1600,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-071": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-074": {
+        "paidAmount": 4000,
+        "monthlyFee": 4000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-075": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-076": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-078": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-081": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-083": {
+        "paidAmount": 1600,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-084": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-085": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-086": {
+        "paidAmount": 1750,
+        "monthlyFee": 1750,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-090": {
+        "paidAmount": 2700,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-091": {
+        "paidAmount": 2000,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-092": {
+        "paidAmount": 1800,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-093": {
+        "paidAmount": 2500,
+        "monthlyFee": 2200,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-094": {
+        "paidAmount": 2400,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-095": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-101": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-102": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-103": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-106": {
+        "paidAmount": 2800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-109": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-110": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-111": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-112": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-113": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-114": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-115": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-118": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-119": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-120": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-121": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-122": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-123": {
+        "paidAmount": 4500,
+        "monthlyFee": 4500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-124": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-125": {
+        "paidAmount": 200,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-126": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-127": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-128": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-129": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-130": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-132": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-133": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-134": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-135": {
+        "paidAmount": 1700,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-136": {
+        "paidAmount": 3000,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-137": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-138": {
+        "paidAmount": 1500,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-139": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-141": {
+        "paidAmount": 2300,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-142": {
+        "paidAmount": 2000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-143": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-144": {
+        "paidAmount": 3000,
+        "monthlyFee": 3000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-145": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-146": {
+        "paidAmount": 1000,
+        "monthlyFee": 1000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-147": {
+        "paidAmount": 1750,
+        "monthlyFee": 1750,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-148": {
+        "paidAmount": 3200,
+        "monthlyFee": 3200,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-152": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-153": {
+        "paidAmount": 1300,
+        "monthlyFee": 1300,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-155": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-156": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-157": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-158": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-159": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-160": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-161": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-163": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-164": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-166": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-167": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-168": {
+        "paidAmount": 1450,
+        "monthlyFee": 1450,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-169": {
+        "paidAmount": 1250,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-170": {
+        "paidAmount": 1900,
+        "monthlyFee": 1900,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-171": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-174": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-176": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-177": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-178": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-179": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-181": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-183": {
+        "paidAmount": 1800,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-184": {
+        "paidAmount": 1800,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-185": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-186": {
+        "paidAmount": 1400,
+        "monthlyFee": 1400,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-187": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-189": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-190": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-191": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-192": {
+        "paidAmount": 1200,
+        "monthlyFee": 1200,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-193": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-194": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-195": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-196": {
+        "paidAmount": 3000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-197": {
+        "paidAmount": 3500,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-215": {
+        "paidAmount": 1700,
+        "monthlyFee": 1700,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-216": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-217": {
+        "paidAmount": 1750,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-218": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-219": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-220": {
+        "paidAmount": 2400,
+        "monthlyFee": 2400,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-221": {
+        "paidAmount": 3500,
+        "monthlyFee": 3500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-222": {
+        "paidAmount": 2000,
+        "monthlyFee": 2000,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-224": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-225": {
+        "paidAmount": 2000,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-226": {
+        "paidAmount": 1600,
+        "monthlyFee": 1600,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-227": {
+        "paidAmount": 2300,
+        "monthlyFee": 2300,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-228": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-229": {
+        "paidAmount": 1800,
+        "monthlyFee": 1800,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-230": {
+        "paidAmount": 1500,
+        "monthlyFee": 500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-231": {
+        "paidAmount": 2400,
+        "monthlyFee": 2400,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-233": {
+        "paidAmount": 2500,
+        "monthlyFee": 2500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      },
+      "USR-234": {
+        "paidAmount": 1500,
+        "monthlyFee": 1500,
+        "collector": "p2",
+        "date": "2026-03-10",
+        "method": "Cash",
+        "notes": ""
+      }
+    },
     "2026-04": {
       "USR-002": {
         "paidAmount": 1600,
@@ -5177,6 +11683,14 @@ window.SAMPLE_ISP_DATA = {
         "date": "2026-04-10",
         "method": "Cash",
         "notes": ""
+      },
+      "USR-128": {
+        "paidAmount": 0,
+        "monthlyFee": 0,
+        "collector": "",
+        "date": "",
+        "method": "",
+        "notes": "Dash — is mahine ka bill skip (hisab me nahi)"
       }
     },
     "2026-05": {
@@ -5709,7 +12223,7 @@ window.SAMPLE_ISP_DATA = {
         "notes": "May: 1500+2000"
       },
       "USR-122": {
-        "paidAmount": 400,
+        "paidAmount": 1400,
         "monthlyFee": 2000,
         "collector": "p2",
         "date": "2026-05-10",
@@ -6323,6 +12837,22 @@ window.SAMPLE_ISP_DATA = {
         "date": "2026-05-10",
         "method": "Cash",
         "notes": ""
+      },
+      "USR-206": {
+        "paidAmount": 0,
+        "monthlyFee": 0,
+        "collector": "",
+        "date": "",
+        "method": "",
+        "notes": "Dash — is mahine ka bill skip (hisab me nahi)"
+      },
+      "USR-207": {
+        "paidAmount": 0,
+        "monthlyFee": 0,
+        "collector": "",
+        "date": "",
+        "method": "",
+        "notes": "Dash — is mahine ka bill skip (hisab me nahi)"
       }
     },
     "2026-06": {

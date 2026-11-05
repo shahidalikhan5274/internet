@@ -2442,3 +2442,196 @@ body {
 
 
 
+
+/* =====================================================================
+   KHATA RESPONSIVE FIX — 2026-11-05
+   Problem: Khata (Customer History) modal aur us se khulne wala
+   Bill/Payment form chhoti screen par kat jata tha — form modal-card
+   (overflow:hidden, koi scroll nahi) ka direct child tha, is liye
+   neeche wala "Bill / Payment Save Karein" button nazar hi nahi ata tha.
+   Fix: modal-card ko flex column banao, form/body ko andar scroll hone
+   do, aur Save wala action bar neeche chipka (sticky) rakho taake wo
+   hamesha nazar aaye. Sirf CSS hai — HTML/JS mein koi tabdeeli nahi.
+   ===================================================================== */
+
+/* 1) Har modal: header upar fixed, baqi hissa andar scroll ho */
+.modal-card {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 40px);
+}
+
+.modal-card > .modal-header {
+  flex-shrink: 0;
+}
+
+/* Form wale modals (Bill/Payment, Settlement, User, Extra Income) */
+.modal-card > form.styled-form {
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 0;
+  flex: 1 1 auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Scrollable body wale modals (Khata history) */
+.modal-body-scrollable {
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+/* 2) Save/Cancel bar hamesha nazar aaye — form ke neeche chipka rahe */
+.modal-card > form.styled-form .modal-actions {
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  margin: 10px -24px -20px;
+  padding: 12px 24px;
+}
+
+/* 3) Khata toolbar: mahina/saal/button chhoti screen par saaf wrap hon */
+@media (max-width: 768px) {
+  .modal-overlay {
+    align-items: flex-end;
+    padding: 8px;
+  }
+
+  .modal-card {
+    max-height: 94vh;
+    width: 100%;
+    margin: 0;
+  }
+
+  .modal-card-lg {
+    max-width: 100%;
+  }
+
+  .modal-header {
+    padding: 14px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .modal-header > div {
+    min-width: 0;
+  }
+
+  .modal-title {
+    font-size: 1rem;
+  }
+
+  .modal-subtitle {
+    font-size: 0.74rem;
+  }
+
+  .modal-body-scrollable {
+    max-height: none;
+    padding: 12px 14px;
+  }
+
+  /* Khata toolbar stack ho jaye, controls poori chauraai lein */
+  .khata-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 12px;
+  }
+
+  .khata-toolbar .khata-add-title {
+    font-size: 0.82rem;
+  }
+
+  .khata-toolbar .khata-add-controls {
+    width: 100%;
+  }
+
+  .khata-toolbar .khata-add-controls .form-select {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .khata-toolbar .khata-add-controls #khataSelectMonth {
+    flex: 2 1 0;
+  }
+
+  .khata-toolbar .khata-add-controls #khataSelectYear {
+    flex: 1 1 0;
+  }
+
+  .khata-toolbar .khata-add-controls .btn {
+    flex: 1 1 100%;
+    justify-content: center;
+    padding: 9px 14px;
+  }
+
+  /* Bill/Payment form: 2-column rows ek ke neeche ek */
+  .modal-card > form.styled-form .form-row {
+    flex-direction: column;
+  }
+
+  /* Summary banner ke 3 hisse wrap hon, dabay nahi */
+  .bill-summary-banner {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .bill-summary-banner .sum-item {
+    flex: 1 1 40%;
+    min-width: 120px;
+  }
+
+  /* Khata table: pehla column mobile par halka chhota, baqi scroll */
+  #modalCustomerHistory .data-table thead th:first-child,
+  #modalCustomerHistory .data-table tbody td:first-child {
+    min-width: 130px;
+    max-width: 150px;
+  }
+
+  #modalCustomerHistory .data-table th,
+  #modalCustomerHistory .data-table td {
+    padding: 10px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-overlay {
+    padding: 0;
+  }
+
+  .modal-card {
+    max-height: 100vh;
+    max-height: 100dvh;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+
+  .modal-card > form.styled-form {
+    padding: 14px 16px;
+  }
+
+  /* Save bar: Delete upar, Cancel + Save neeche poori chauraai */
+  .modal-card > form.styled-form .modal-actions {
+    flex-wrap: wrap;
+    margin: 10px -16px -14px;
+    padding: 12px 16px;
+  }
+
+  .modal-card > form.styled-form .modal-actions > div {
+    width: 100%;
+  }
+
+  .modal-card > form.styled-form .modal-actions .btn-success {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .khata-toolbar .khata-add-controls .form-select {
+    flex: 1 1 100%;
+  }
+
+  .khata-toolbar .khata-add-controls #khataSelectMonth,
+  .khata-toolbar .khata-add-controls #khataSelectYear {
+    flex: 1 1 100%;
+  }
+}
