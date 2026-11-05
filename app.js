@@ -20,6 +20,15 @@ class NetHisabApp {
     this.isReceivingRemoteUpdate = false;
     this.lastLocalSaveTimestamp = null;
     this.syncDebounceTimer = null;
+
+    // Offline sync queue (2026-11-05): internet na ho to bill add karne par
+    // change localStorage me queue ho jata hai; internet wapas aate hi queue
+    // khud-ba-khud cloud par push ho jati hai.
+    this.outboxKey = 'nethisab_sync_outbox_v1';
+    this.outbox = { ops: [] };
+    this.lastSyncedData = null;
+    this.firebaseConnected = false;
+    this._replayingOutbox = false;
     
     // In-memory data store
     this.data = {
@@ -106,15 +115,26 @@ class NetHisabApp {
     }
     if (!this.data.settlements) this.data.settlements = {};
     if (!this.data.extraIncome) this.data.extraIncome = {};
+    // Offline queue: pichle session ki pending changes (agar hon) load kar lo,
+    // aur aaj ka data hi "last synced" baseline hai — is se aage ke har save
+    // ka diff nikal kar offline queue me jayega.
+    this.outbox = this.loadOutbox();
+    this.lastSyncedData = JSON.parse(JSON.stringify(this.data));
     this.saveData();
   }
 
   saveData(skipCloud = false) {
     localStorage.setItem(this.storageKey, JSON.stringify(this.data));
-    
-    // Automatically sync to Cloud if connected and not applying inbound remote data
-    if (!skipCloud && this.isCloudSyncActive && this.firebaseDb && !this.isReceivingRemoteUpdate) {
-      this.debouncePushToCloud();
+
+    // Automatically sync to Cloud if connected and not applying inbound remote data.
+    // Cloud configured hai magar connection down hai (offline) to change ko
+    // offline queue me daal do — internet wapas aate hi khud push ho jayega.
+    if (!skipCloud && !this.isReceivingRemoteUpdate) {
+      if (this.isCloudSyncActive && this.firebaseDb && this.firebaseConnected) {
+        this.debouncePushToCloud();
+      } else if (this.isCloudSyncActive && this.firebaseDb) {
+        this.enqueueOfflineOps();
+      }
     }
   }
 
@@ -2676,10 +2696,14 @@ class NetHisabApp {
 
       // Online / Offline connection listener
       this.firebaseDb.ref('.info/connected').on('value', (snap) => {
-        if (snap.val() === true) {
+        this.firebaseConnected = (snap.val() === true);
+        if (this.firebaseConnected) {
           this.updateCloudStatusUI('connected', 'Live Cloud Sync 🟢');
+          // Internet wapas aaya — offline me add kiye gaye bills ab cloud par bhej do
+          this.replayOutbox();
         } else {
-          this.updateCloudStatusUI('offline', 'Offline (Local Mode) 🟡');
+          const pending = this.outboxPendingCount();
+          this.updateCloudStatusUI('offline', pending > 0 ? `Offline — ${pending} pending ⏳` : 'Offline (Local Mode) 🟡');
         }
       });
 
@@ -2718,14 +2742,151 @@ class NetHisabApp {
 
       this.firebaseDb.ref('nethisab_shared_data').set(payload)
         .then(() => {
+          this.lastSyncedData = JSON.parse(JSON.stringify(this.data));
           this.updateCloudStatusUI('connected', 'Live Cloud Sync 🟢');
           this.updateLastSyncTimeDisplay(timestamp);
         })
         .catch((err) => {
           console.error('Cloud push failed:', err);
+          // Push nahi gaya (internet gaya hoga) — change ko offline queue me daal do
+          this.enqueueOfflineOps();
           this.updateCloudStatusUI('connected', 'Cloud Connected (Retry on save)');
         });
     }, 400);
+  }
+
+  /* ===================================================================
+     OFFLINE SYNC QUEUE — 2026-11-05
+     Internet na ho to bill add karne par change localStorage me queue ho
+     jata hai; internet wapas aate hi queue khud-ba-khud cloud par push ho
+     jati hai (targeted update — sirf wohi cell/month update hota hai jo
+     offline change hua tha, dusre partner ke bills overwrite nahi hote).
+     Ek hi cell dono ne offline badla ho to aakhir me aane wali value
+     jeet-ti hai — app ka pehle se chalta last-write-wins rule.
+     Queue isi browser ki localStorage me rehti hai: offline bill usi
+     browser se sync hoga jis par add hua tha.
+     =================================================================== */
+
+  loadOutbox() {
+    try {
+      const raw = localStorage.getItem(this.outboxKey);
+      if (!raw) return { ops: [] };
+      const parsed = JSON.parse(raw);
+      if (!parsed || !Array.isArray(parsed.ops)) return { ops: [] };
+      return { ops: parsed.ops };
+    } catch (e) {
+      return { ops: [] };
+    }
+  }
+
+  saveOutbox() {
+    try {
+      localStorage.setItem(this.outboxKey, JSON.stringify(this.outbox));
+    } catch (e) {
+      console.error('Outbox save failed:', e);
+    }
+  }
+
+  outboxPendingCount() {
+    return (this.outbox && this.outbox.ops) ? this.outbox.ops.length : 0;
+  }
+
+  // Pure diff: last-synced data vs current data -> targeted cloud ops.
+  // Bills: per-cell (user + month) — dusre partner ke usi month ke bills
+  // mehfooz rehte hain. Expenses/settlements/extraIncome: per-month.
+  // Users/settings: poora section.
+  computeOps(oldData, newData) {
+    const ops = [];
+    const same = (a, b) => JSON.stringify(a === undefined ? null : a) === JSON.stringify(b === undefined ? null : b);
+    // Bills per cell
+    const oldBills = (oldData && oldData.bills) || {};
+    const newBills = (newData && newData.bills) || {};
+    const months = new Set([...Object.keys(oldBills), ...Object.keys(newBills)]);
+    for (const m of months) {
+      const om = oldBills[m] || {};
+      const nm = newBills[m] || {};
+      const users = new Set([...Object.keys(om), ...Object.keys(nm)]);
+      for (const u of users) {
+        if (!same(om[u], nm[u])) {
+          ops.push({ path: `bills/${m}/${u}`, value: nm[u] ? JSON.parse(JSON.stringify(nm[u])) : null });
+        }
+      }
+    }
+    // Month-keyed sections per month
+    for (const section of ['expenses', 'settlements', 'extraIncome']) {
+      const os = (oldData && oldData[section]) || {};
+      const ns = (newData && newData[section]) || {};
+      const ms = new Set([...Object.keys(os), ...Object.keys(ns)]);
+      for (const m of ms) {
+        if (!same(os[m], ns[m])) {
+          ops.push({ path: `${section}/${m}`, value: ns[m] ? JSON.parse(JSON.stringify(ns[m])) : null });
+        }
+      }
+    }
+    // Whole sections
+    for (const section of ['users', 'settings']) {
+      if (!same(oldData ? oldData[section] : null, newData ? newData[section] : null)) {
+        ops.push({ path: section, value: JSON.parse(JSON.stringify(newData[section])) });
+      }
+    }
+    return ops;
+  }
+
+  enqueueOfflineOps() {
+    if (!this.lastSyncedData) {
+      this.lastSyncedData = JSON.parse(JSON.stringify(this.data));
+      return;
+    }
+    const fresh = this.computeOps(this.lastSyncedData, this.data);
+    if (fresh.length > 0) {
+      // Dedupe: same path ki purani op ko nayi se replace kar do (latest jeet-ti hai)
+      const byPath = new Map();
+      for (const op of this.outbox.ops) byPath.set(op.path, op);
+      for (const op of fresh) byPath.set(op.path, op);
+      this.outbox.ops = [...byPath.values()];
+      this.saveOutbox();
+      if (!this.firebaseConnected) {
+        this.updateCloudStatusUI('offline', `Offline — ${this.outboxPendingCount()} pending ⏳`);
+      }
+    }
+    this.lastSyncedData = JSON.parse(JSON.stringify(this.data));
+  }
+
+  replayOutbox() {
+    if (this._replayingOutbox) return false;
+    if (!this.firebaseDb || !this.firebaseConnected) return false;
+    if (this.outboxPendingCount() === 0) return false;
+
+    this._replayingOutbox = true;
+    const timestamp = Date.now();
+    const pendingOps = this.outbox.ops.length;
+
+    const updates = {};
+    for (const op of this.outbox.ops) {
+      updates[op.path] = op.value;
+    }
+    updates._lastSyncTime = timestamp;
+    updates._lastUpdatedBy = this.data.settings?.partner1Name || 'Partner';
+
+    this.firebaseDb.ref('nethisab_shared_data').update(updates)
+      .then(() => {
+        this._replayingOutbox = false;
+        this.outbox = { ops: [] };
+        this.saveOutbox();
+        this.lastSyncedData = JSON.parse(JSON.stringify(this.data));
+        // NOTE: lastLocalSaveTimestamp yahan set NAHI karte — replay ke baad
+        // cloud se aane wala merged data (dusre partner ke bills samet)
+        // apply hona chahiye, echo-skip se rukna nahi chahiye.
+        this.updateCloudStatusUI('connected', 'Live Cloud Sync 🟢');
+        this.updateLastSyncTimeDisplay(timestamp);
+        this.showToast(`⏳ Offline bills sync ho gaye ✅ (${pendingOps} change)`, 'success');
+      })
+      .catch((err) => {
+        this._replayingOutbox = false;
+        console.error('Outbox replay failed:', err);
+        this.showToast('Offline bills sync nahi ho rahe — internet check karein, phir khud try hoga.', 'danger');
+      });
+    return true;
   }
 
   handleRemoteDataUpdate(remoteData) {
@@ -2756,6 +2917,15 @@ class NetHisabApp {
       return;
     }
 
+    // OFFLINE SYNC QUEUE: is device par offline changes pending hain to pehle
+    // un ko cloud par bhej do — cloud ka data apply karne se pehle, warna
+    // offline bills kho jayen ge. Replay ke baad cloud khud merged data
+    // wapas bhej dega (echo), tab ye apply hoga.
+    if (this.outboxPendingCount() > 0) {
+      this.replayOutbox();
+      return;
+    }
+
     this.isReceivingRemoteUpdate = true;
     const syncTime = remoteData._lastSyncTime || Date.now();
     const updatedBy = remoteData._lastUpdatedBy || 'Partner';
@@ -2767,6 +2937,7 @@ class NetHisabApp {
 
     this.data = cleanData;
     this.saveData(true); // Save to local storage without re-triggering cloud push
+    this.lastSyncedData = JSON.parse(JSON.stringify(this.data));
     this.renderAll();
 
     this.updateLastSyncTimeDisplay(syncTime);
@@ -2867,11 +3038,16 @@ class NetHisabApp {
 
       this.firebaseDb.ref('nethisab_shared_data').set(payload)
         .then(() => {
+          this.lastSyncedData = JSON.parse(JSON.stringify(this.data));
+          // Poora data cloud par chala gaya — offline queue ab khali hai
+          this.outbox = { ops: [] };
+          this.saveOutbox();
           this.showToast("Tamam 245 صارفین aur bills Cloud (Firebase) par save ho gaye!", "success");
           this.updateLastSyncTimeDisplay(timestamp);
         })
         .catch((err) => {
           console.error("Cloud push failed:", err);
+          this.enqueueOfflineOps();
           if (!silent) alert("Upload me masla hua: " + err.message);
         });
     };
