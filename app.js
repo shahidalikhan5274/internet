@@ -208,7 +208,27 @@ class NetHisabApp {
     const registerStart = allMonths[0]; // '2025-11' — purani register ka pehla mahina
     const inOldRegister = allMonths.some(m => m < '2026-04' && this.data.bills[m] && this.data.bills[m][userId]);
     const billingStart = inOldRegister ? registerStart : firstBillMonth;
-    const billableMonths = billingStart ? priorMonths.filter(m => m >= billingStart) : [];
+    if (!billingStart) {
+      return Number(user.initialArrears) || 0;
+    }
+
+    // MONTH-RANGE FIX (2026-11-05): pehle sirf wo mahine gine jate the
+    // jin ki bills mein key mojood thi. Jis mahine kisi user ka bhi bill
+    // nahi bana (jese Sep/Oct/Nov 2026 — kisi ne pay nahi kia, to key hi
+    // nahi hai), wo mahina hisab se nikal jata tha aur baqaya wahin ruk
+    // jata tha (Allied-abid USR-003 ka pending Oct/Nov mein 13,500 pe
+    // atka hua). Ab billingStart se targetMonth se pehle tak ke HAR
+    // calendar mahine ka hisab hota hai; jis mahine ki entry nahi, us
+    // mein user ki base fee lagti hai aur paid 0 hota hai — baqaya har
+    // month barhta rehta hai (3000 wala: 6000, phir 9000, phir 12000...).
+    const billableMonths = [];
+    let _m = billingStart;
+    while (_m < targetMonth) {
+      billableMonths.push(_m);
+      const _y = Number(_m.slice(0, 4));
+      const _mo = Number(_m.slice(5, 7));
+      _m = _mo === 12 ? `${_y + 1}-01` : `${_y}-${String(_mo + 1).padStart(2, '0')}`;
+    }
     if (billableMonths.length === 0) {
       return Number(user.initialArrears) || 0;
     }
